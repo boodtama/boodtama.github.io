@@ -26,7 +26,7 @@
 .profile {
   @include border-top-radius(50%);
   @include border-bottom-radius(50%);
-  //float: left;
+  float: left;
   height: $nav-content-height;
   width: $nav-content-height;
 

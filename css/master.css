@@ -656,6 +656,7 @@ picture {
   border-top-right-radius: 50%;
   border-bottom-left-radius: 50%;
   border-bottom-right-radius: 50%;
+  float: left;
   height: 3.75em;
   width: 3.75em; }
   .profile:hover {
