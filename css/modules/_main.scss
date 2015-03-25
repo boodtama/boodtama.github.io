@@ -1,0 +1,17 @@
+.outer-container, .main-content {
+  @include outer-container;
+}
+
+@mixin first-section-margin-top {
+  margin-top: ($nav-total-height + $medium-spacing + $small-spacing);
+
+  //Responsive medium screen
+  @include media(min-width 480px max-width 1200px) {
+    margin-top: ($nav-total-height + $medium-spacing);
+  }
+
+  //Responsive small screen
+  @include media(max-width 479px) {
+    margin-top: ($nav-total-height + $small-spacing);
+  }
+}

@@ -1,0 +1,13 @@
+footer {
+  padding: $small-spacing 0;
+  text-align: center;
+
+  p {
+    margin: 0 0 $extra-small-spacing;
+  }
+}
+
+.footer-social{
+  @include social-table;
+  margin: 0 auto $small-spacing;
+}

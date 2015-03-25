@@ -1,0 +1,128 @@
+// Hero
+#hero-project-descrip {
+  @include span-columns(6);
+  @include first-section-margin-top;
+  padding: 0 $small-spacing 0 0;
+  margin-bottom: $medium-spacing;
+
+  //Responsive medium to large screen
+  @include media(min-width em(480) max-width em(1200)) {
+    @include span-columns(8);
+    @include shift(2);
+    margin-bottom: 0;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    margin-bottom: 0;
+    padding: 0 1em;
+  }
+}
+
+.hero-sidebar {
+  @include span-columns(3);
+  @include first-section-margin-top;
+  padding: 3.5em 0 0;
+
+  //Responsive medium to large screen
+  @include media(min-width em(480) max-width em(1200)) {
+    @include span-columns(2);
+    @include shift(2);
+    margin-top: 0;
+    padding: 0;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    margin-top: 0;
+    padding: 0 1em;
+  }
+}
+
+ul.hero-sidebar-list {
+  margin-bottom: $medium-spacing;
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    margin-bottom: $small-spacing + $extra-small-spacing;
+  }
+
+  li {
+    width: 100%;
+  }
+}
+
+
+// Main case study content
+.main-content-copy {
+  @include span-columns(8);
+  @include shift(2);
+
+  @at-root h2#{&} {
+    margin-top: $extra-small-spacing;
+    text-align: center;
+  }
+
+  @at-root ul#{&} {
+    @include shift(1);
+    margin-bottom: $medium-spacing;
+  }
+
+  @at-root li#{&} {
+    list-style-type: disc;
+    width: 100%;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    @include shift(0);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.main-content-image {
+  @include span-columns(10);
+  @include shift(1);
+  margin-top: $small-spacing;
+  margin-bottom: $small-spacing;
+
+  @at-root p#{&} {
+    color: $medium-gray;
+    font-family: $caption-font-family;
+    font-size: ($base-font-size * 0.875); /*14pt*/;
+    margin-top: 0;
+    margin-bottom: $medium-spacing;
+    text-align: center;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    @include shift(0);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+}
+
+.main-content-list {
+  clear: both;
+
+  @at-root ul#{&} {
+    @include span-columns(8);
+    @include shift(2);
+    padding-left: $extra-small-spacing;
+    margin-top: $small-spacing * -1;
+    margin-bottom: $small-spacing;
+  }
+
+  @at-root li#{&} {
+    display: list-item;
+    list-style: disc inside;
+    width: 100%;
+  }
+}

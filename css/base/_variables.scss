@@ -1,0 +1,50 @@
+// Typography
+@include font-face("montserrat-bold", "../fonts/montserrat/montserrat-bold/Montserrat-Bold", $file-formats: eot woff ttf svg);
+@include font-face("roboto-light", "../fonts/roboto/roboto-light/Roboto-Light-webfont", $file-formats: eot woff ttf svg);
+@include font-face("roboto-light-italic", "../fonts/roboto/roboto-light-italic/Roboto-LightItalic-webfont", $file-formats: eot woff ttf svg);
+@include font-face("roboto-medium", "../fonts/roboto/roboto-medium/Roboto-Medium-webfont", $file-formats: eot woff ttf svg);
+
+$heading-font-family: "montserrat-bold", "Helvetica", "Arial", sans-serif;
+$base-font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
+$caption-font-family: "roboto-light-italic", "Helvetica", "Arial", sans-serif;
+$link-font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
+
+// Font Sizes
+$base-font-size: 1em;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 4em;
+$medium-spacing: $base-spacing / 2;
+$small-spacing: $base-spacing / 4;
+$extra-small-spacing: $base-spacing / 8;
+$base-z-index: 0;
+$nav-content-height: 3.75em; /*60px*/
+$nav-total-height: 5.625em; /*90px*/
+
+// Colors
+$orange: #ef541e;
+$dark-gray: #363636;
+$medium-gray: #acacac;
+$light-gray: #ebebeb;
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $dark-gray;
+$action-color: $orange;
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 2px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+// Interactions
+$base-hover-opacity: 0.8;
+$base-transition: all 0.2s;

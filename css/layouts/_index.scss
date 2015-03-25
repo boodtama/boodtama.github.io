@@ -1,0 +1,92 @@
+// Hero
+#hero-personal-info {
+  @include span-columns(6);
+  @include shift(3);
+  @include first-section-margin-top;
+  text-align: center;
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(1200)) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+}
+
+.hero-social{
+  @include social-table;
+  margin: 0 auto $base-spacing auto;
+}
+
+
+// Work listing
+.work-item {
+  @include outer-container;
+  margin: auto auto $base-spacing;
+}
+
+.work-image {
+  @include span-columns(7);
+
+  //Responsive large screen
+  @include media(min-width em(768) max-width em(1200)) {
+    padding-left: 1em;
+  }
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(768)) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+
+.work-text {
+  @include span-columns(5);
+  padding: $medium-spacing 0 0 $small-spacing;
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(768)) {
+    @include span-columns(8);
+    @include shift(2);
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+  }
+}
+
+
+// View case study link
+.view-case-study {
+	position: relative;
+
+  &:after {
+  	content: "\2192";
+    left: 100%;
+	  opacity: 0;
+  	position: absolute;
+  }
+
+  &:hover {
+    color: $orange;
+
+      &:after {
+      transition: $base-transition;
+    	left: 105%;
+    	opacity: 1;
+    }
+  }
+}

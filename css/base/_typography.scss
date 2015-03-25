@@ -1,0 +1,104 @@
+body {
+  @include font-feature-settings("kern", "liga", "pnum");
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+h1 {
+  font-family: $heading-font-family;
+  font-size: ($base-font-size * 2.25); /*36pt*/
+  line-height: $heading-line-height;
+  margin: 0 0 ($extra-small-spacing / 2);
+
+  &.name {
+    margin: 0;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    text-align: center;
+  }
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-size: ($base-font-size * 1.5); /*24pt*/
+    line-height: $heading-line-height;
+    margin: 0 0 $extra-small-spacing;
+}
+
+p {
+  margin: 0 0 $small-spacing;
+
+  &.hero {
+    font-size: ($base-font-size * 1.5); /*24pt*/
+    margin: $extra-small-spacing 0 $small-spacing;
+  }
+
+  &.label {
+    color: $medium-gray;
+    font-size: ($base-font-size * 0.875); /*14pt*/
+    margin: 0;
+  }
+
+  &.legal {
+    color: $medium-gray;
+    font-size: ($base-font-size * 0.75); /*12pt*/
+    margin: 0;
+  }
+
+}
+
+a {
+  color: $action-color;
+  font-family: $link-font-family;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    color: lighten($action-color, 20%);
+    transition: $base-transition;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+hr {
+  border-bottom: $base-border;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  margin: 0 0 ($medium-spacing + $small-spacing);
+
+  //Responsive medium to large screen
+  @include media(min-width em(480) max-width em(1200)) {
+    @include span-columns(10);
+    @include shift(1);
+    margin-top: $small-spacing;
+    margin-bottom: $small-spacing;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(10);
+    @include shift(1);
+    margin-top: $medium-spacing;
+    margin-bottom: $small-spacing;
+  }
+}
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}

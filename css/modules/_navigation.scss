@@ -1,0 +1,60 @@
+#nav-wrapper {
+  background: $base-background-color; //Fallback for rgba
+  background: rgba(255,255,255,0.9);
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1000;
+}
+
+#nav-outer-container {
+  @include outer-container;
+  height: $nav-total-height;
+  padding: ($base-font-size * 0.9375) 0; /*15px top*/
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(1200)) {
+    padding: ($base-font-size * 0.9375) 1em; /*15px top*/
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    padding: ($base-font-size * 0.9375) 1em; /*15px top*/
+  }
+}
+
+.profile {
+  @include border-top-radius(50%);
+  @include border-bottom-radius(50%);
+  //float: left;
+  height: $nav-content-height;
+  width: $nav-content-height;
+
+  &:hover {
+    opacity: $base-hover-opacity;
+    transition: $base-transition;
+  }
+}
+
+nav {
+  float: right;
+  @include clearfix;
+}
+
+li {
+  display: table-cell;
+  float: left;
+  list-style-type: none;
+}
+
+.nav-text {
+  color: $base-font-color;
+  font-size: $base-font-size * 1.125; /*18pt*/
+  font-family: $base-font-family;
+  line-height: $nav-content-height;
+  margin-left: $base-font-size * 3.125; /*50px*/
+
+  &:hover {
+      color: $action-color;
+  }
+}
