@@ -38,6 +38,7 @@ p {
 
   &.hero {
     font-size: ($base-font-size * 1.5); /*24pt*/
+    line-height: 1.5;
     margin: $extra-small-spacing 0 $small-spacing;
   }
 

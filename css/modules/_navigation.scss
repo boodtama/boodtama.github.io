@@ -51,7 +51,7 @@ li {
   color: $base-font-color;
   font-size: $base-font-size * 1.125; /*18pt*/
   font-family: $base-font-family;
-  line-height: $nav-content-height;
+  line-height: 3.25;
   margin-left: $base-font-size * 3.125; /*50px*/
 
   &:hover {
