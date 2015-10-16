@@ -1,6 +1,17 @@
 footer {
   padding: $small-spacing 0;
   text-align: center;
+  @include outer-container;
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(1200)) {
+    padding: ($base-font-size * 0.9375) 1em; /*15px top*/
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    padding: ($base-font-size * 0.9375) 1em; /*15px top*/
+  }
 
   p {
     margin: 0 0 $extra-small-spacing;

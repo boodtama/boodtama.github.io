@@ -2,6 +2,7 @@
 #hero-personal-info {
   @include span-columns(6);
   @include shift(3);
+  @include first-section-margin-top;
   text-align: center;
 
   //Responsive medium screen

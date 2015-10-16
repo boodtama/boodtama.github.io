@@ -743,7 +743,22 @@ li {
 
 footer {
   padding: 1.5em 0;
-  text-align: center; }
+  text-align: center;
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  footer::after {
+    clear: both;
+    content: "";
+    display: table; }
+  @media screen and (min-width: 30em) and (max-width: 75em) {
+    footer {
+      padding: 0.9375em 1em;
+      /*15px top*/ } }
+  @media screen and (max-width: 29.99375em) {
+    footer {
+      padding: 0.9375em 1em;
+      /*15px top*/ } }
   footer p {
     margin: 0 0 0.75em; }
 
