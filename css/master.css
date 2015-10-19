@@ -1072,7 +1072,7 @@ ul.hero-sidebar-list {
     margin-right: 2.35765%;
     width: 65.88078%;
     margin-left: 17.05961%;
-    padding-left: 0.75em;
+    padding-left: 1em;
     margin-top: -1.5em;
     margin-bottom: 1.5em; }
     ul.main-content-list:last-child {
@@ -1084,7 +1084,8 @@ ul.hero-sidebar-list {
         margin-right: 2.35765%;
         width: 100%;
         margin-left: 0%;
-        padding-left: 1.5em; }
+        padding-left: 2em;
+        padding-right: 1em; }
         ul.main-content-list:last-child {
           margin-right: 0; } }
   li.main-content-list {

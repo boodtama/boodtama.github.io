@@ -111,7 +111,7 @@ ul.hero-sidebar-list {
   @at-root ul#{&} {
     @include span-columns(8);
     @include shift(2);
-    padding-left: $extra-small-spacing;
+    padding-left: 1em;
     margin-top: $small-spacing * -1;
     margin-bottom: $small-spacing;
 
@@ -119,7 +119,8 @@ ul.hero-sidebar-list {
     @include media(max-width em(479.9)) {
       @include span-columns(12);
       @include shift(0);
-      padding-left: $small-spacing;
+      padding-left: 2em;
+      padding-right: 1em;
     }
   }
 
