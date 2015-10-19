@@ -1077,6 +1077,16 @@ ul.hero-sidebar-list {
     margin-bottom: 1.5em; }
     ul.main-content-list:last-child {
       margin-right: 0; }
+    @media screen and (max-width: 29.99375em) {
+      ul.main-content-list {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%;
+        margin-left: 0%;
+        padding-left: 1.5em; }
+        ul.main-content-list:last-child {
+          margin-right: 0; } }
   li.main-content-list {
     display: list-item;
     list-style: disc inside;

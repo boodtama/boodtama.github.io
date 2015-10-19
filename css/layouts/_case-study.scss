@@ -114,6 +114,13 @@ ul.hero-sidebar-list {
     padding-left: $extra-small-spacing;
     margin-top: $small-spacing * -1;
     margin-bottom: $small-spacing;
+
+    //Responsive small screen
+    @include media(max-width em(479.9)) {
+      @include span-columns(12);
+      @include shift(0);
+      padding-left: $small-spacing;
+    }
   }
 
   @at-root li#{&} {
