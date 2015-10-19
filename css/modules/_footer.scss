@@ -1,7 +1,7 @@
 footer {
+  @include outer-container;
   padding: $small-spacing 0;
   text-align: center;
-  @include outer-container;
 
   //Responsive medium screen
   @include media(min-width em(480) max-width em(1200)) {

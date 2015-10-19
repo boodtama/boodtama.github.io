@@ -1,3 +1,8 @@
+@include selection {
+  background: $action-color;
+  color: #fff;
+}
+
 body {
   @include font-feature-settings("kern", "liga", "pnum");
   color: $base-font-color;
@@ -11,6 +16,11 @@ h1 {
   font-size: ($base-font-size * 2.25); /*36pt*/
   line-height: $heading-line-height;
   margin: 0 0 ($extra-small-spacing / 2);
+
+  &.more-work {
+    text-align: center;
+    margin-bottom: $small-spacing;
+  }
 
   &.name {
     margin: 0;
@@ -54,6 +64,13 @@ p {
     margin: 0;
   }
 
+  &.project-overview {
+    //Responsive screens
+    @include media(max-width em(1200)) {
+      margin-bottom: ($small-spacing + $extra-small-spacing);
+    }
+  }
+
 }
 
 a {
@@ -94,7 +111,25 @@ hr {
     @include span-columns(10);
     @include shift(1);
     margin-top: $medium-spacing;
-    margin-bottom: $small-spacing;
+    margin-bottom: $medium-spacing;
+  }
+
+  &.bottom-divider {
+    margin: $medium-spacing 0 ($medium-spacing + $small-spacing);
+
+    //Responsive large screen
+    @include media(min-width em(480) max-width em(1200)) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+
+    //Responsive small screen
+    @include media(max-width em(479.9)) {
+      @include span-columns(10);
+      @include shift(1);
+      margin-top: $medium-spacing;
+      margin-bottom: $medium-spacing;
+    }
   }
 }
 
