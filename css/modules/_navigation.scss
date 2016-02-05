@@ -57,4 +57,9 @@ li {
   &:hover {
       color: $action-color;
   }
+
+  //Responsive small screen
+  @include media(max-width 479px) {
+    margin-left: $base-font-size * 2.25; /*36px*/
+  }
 }

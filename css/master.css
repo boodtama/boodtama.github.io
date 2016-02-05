@@ -722,6 +722,10 @@ li {
   /*50px*/ }
   .nav-text:hover {
     color: #ef541e; }
+  @media screen and (max-width: 479px) {
+    .nav-text {
+      margin-left: 2.25em;
+      /*36px*/ } }
 
 .outer-container, .main-content {
   max-width: 68em;
