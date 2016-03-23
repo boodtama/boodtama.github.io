@@ -396,7 +396,7 @@ button {
   -o-appearance: none;
   appearance: none;
   -webkit-font-smoothing: antialiased;
-  background-color: #ef541e;
+  background-color: #ff3d33;
   border-radius: 3px;
   border: none;
   color: #fff;
@@ -414,7 +414,7 @@ button {
   input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus,
   button:hover,
   button:focus {
-    background-color: #b4380d;
+    background-color: #e60b00;
     color: #fff; }
   input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled,
   button:disabled {
@@ -463,8 +463,8 @@ textarea {
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
-    border-color: #ef541e;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(227, 71, 16, 0.7);
+    border-color: #ff3d33;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(255, 37, 26, 0.7);
     outline: none; }
 
 textarea {
@@ -530,11 +530,11 @@ th {
   vertical-align: middle; }
 
 ::selection {
-  background: #ef541e;
+  background: #ff3d33;
   color: #fff; }
 
 ::-moz-selection {
-  background: #ef541e;
+  background: #ff3d33;
   color: #fff; }
 
 body {
@@ -595,11 +595,11 @@ p {
       margin-bottom: 2.25em; } }
 
 a {
-  color: #ef541e;
+  color: #ff3d33;
   font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
   text-decoration: none; }
   a:active, a:focus, a:hover {
-    color: #f69c7d;
+    color: #ff9e99;
     transition: all 0.2s; }
   a:active, a:focus {
     outline: none; }
@@ -721,7 +721,7 @@ li {
   margin-left: 3.125em;
   /*50px*/ }
   .nav-text:hover {
-    color: #ef541e; }
+    color: #ff3d33; }
   @media screen and (max-width: 479px) {
     .nav-text {
       margin-left: 1.5em;
@@ -745,21 +745,21 @@ li {
     opacity: 0.8;
     transition: all 0.2s; }
 
+.email {
+  height: 2em;
+  margin: 0 .5em;
+  width: 2em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAgMjYwIj48cGF0aCBmaWxsPSIjRkYzRDMzIiBkPSJNMTMwIDBDNTguMiAwIDAgNTguMiAwIDEzMHM1OC4yIDEzMCAxMzAgMTMwIDEzMC01OC4yIDEzMC0xMzBTMjAxLjggMCAxMzAgMHpNNjYuNCA4NWgxMjYuOWM2LjcgMCAzLjMgNy43LTAuNCA5LjYgLTMuNyAyLTU0LjQgMjkuMi01Ni4yIDMwLjJzLTQuMyAxLjUtNi44IDEuNSAtNC45LTAuNS02LjgtMS41UzcwLjUgOTYuNiA2Ni44IDk0LjZDNjMuMSA5Mi43IDU5LjcgODUgNjYuNCA4NXpNMTk3LjUgMTY3LjVjMCAzLjItNC4yIDcuNS03LjUgNy41SDcwYy0zLjMgMC03LjUtNC4zLTcuNS03LjUgMCAwIDAtNTMuMyAwLTU0LjcgMC0xLjQgMC0zLjIgMi45LTEuNiA0LjIgMi4yIDU1LjEgMjguOSA1Ny43IDMwLjJzNC4zIDEuNSA2LjggMS41IDQuMi0wLjIgNi44LTEuNSA1My44LTI4IDU4LTMwLjJjMi45LTEuNSAyLjkgMC4zIDIuOSAxLjZDMTk3LjUgMTE0LjIgMTk3LjUgMTY3LjUgMTk3LjUgMTY3LjV6Ii8+PC9zdmc+) no-repeat center center; }
+  .email:hover {
+    opacity: 0.8;
+    transition: all 0.2s; }
+
 .github {
   height: 2em;
   margin: 0 .5em;
   width: 2em;
   background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMzIwIj48cGF0aCBmaWxsPSIjMTgxNjE2IiBkPSJNMTYwIDBDNzEuNiAwIDAgNzEuNiAwIDE2MHM3MS42IDE2MCAxNjAgMTYwczE2MC03MS42IDE2MC0xNjBTMjQ4LjQgMCAxNjAgMHogTTE3OSAxODYgYzMuMSAyLjYgNS42IDcuNyA2LjkgMTUuMnYzNi42Yy04LjcgMi0xNi4yIDMuMS0yNC43IDMuMWMtOC40IDAtMTYuNy0xLjEtMjQuNS0zLjFjMCAwLTAuMS0yMS43LTAuMi0yMy41IGMtMjcuMiA2LTMzLjEtMTMuMS0zMy4xLTEzLjFjLTQuNC0xMS40LTEwLjktMTQuNC0xMC45LTE0LjRjLTguOS02LjEgMC42LTYgMC42LTZjOS45IDAuNiAxNSAxMC4xIDE1IDEwLjEgYzguNyAxNSAyMi44IDEwLjYgMjguNiA4LjFjMC45LTYuNCAzLjQtMTAuNiA2LjItMTMuMWMtMjEuNy0yLjUtNDQuNy0xMC45LTQ0LjctNDguNGMwLTEwLjcgMy43LTE5LjUgMTAuMS0yNi4yIGMtMS0yLjUtNC40LTEyLjUgMS0yNmMwIDAgOC4yLTIuNiAyNyAxMGM3LjktMi4xIDE2LjItMy4yIDI0LjYtMy4yczE2LjcgMS4xIDI0LjYgMy4yYzE4LjctMTIuNyAyNy0xMCAyNy0xMGM1LjQgMTMuNSAyIDIzLjUgMSAyNiBjNi40IDYuOSAxMC4yIDE1LjYgMTAuMiAyNi4yQzIyMy43IDE3NS4yIDIwMC45IDE4My42IDE3OSAxODZ6Ii8+PC9zdmc+) no-repeat center center; }
   .github:hover {
-    opacity: 0.8;
-    transition: all 0.2s; }
-
-.twitter {
-  height: 2em;
-  margin: 0 .5em;
-  width: 2em;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj48cGF0aCBmaWxsPSIjNTVBQ0VFIiBkPSJNMTI1IDBDNTYgMCAwIDU2IDAgMTI1czU2IDEyNSAxMjUgMTI1czEyNS01NiAxMjUtMTI1UzE5NCAwIDEyNSAweiBNMTc1LjkgMTAyLjRjMC4xIDEuMSAwLjEgMi4xIDAuMSAzLjIgYzAgMzIuNi0yNC43IDcwLjEtNzAgNzAuMWMtMTMuOSAwLTI2LjgtNC4xLTM3LjgtMTEuMWMxLjkgMC4yIDMuOSAwLjMgNS45IDAuM2MxMS41IDAgMjIuMS0zLjkgMzAuNS0xMC41IGMtMTAuOC0wLjItMTkuOC03LjMtMjMtMTcuMWMxLjUgMC4zIDMgMC40IDQuNiAwLjRjMi4yIDAgNC40LTAuMyA2LjUtMC45Yy0xMS4zLTIuMS0xOS44LTEyLjEtMTkuOC0yNHYtMC4zYzMuMyAxLjggNy4xIDMgMTEuMSAzLjEgYy02LjYtNC40LTEwLjktMTEuOS0xMC45LTIwLjVjMC00LjUgMS4yLTguNyAzLjMtMTIuNGMxMi4xIDE0LjkgMzAuMiAyNC42IDUwLjggMjUuN2MtMC40LTEuOC0wLjYtMy43LTAuNi01LjYgYzAtMTMuNiAxMS0yNC42IDI0LjYtMjQuNmM3LjEgMCAxMy41IDMgMTcuOSA3LjhjNS42LTEuMSAxMC45LTMuMSAxNS42LTZjLTEuOCA1LjctNS43IDEwLjYtMTAuOCAxMy42YzUtMC42IDkuNy0xLjkgMTQuMS0zLjkgQzE4NC44IDk0LjYgMTgwLjcgOTkgMTc1LjkgMTAyLjR6Ii8+PC9zdmc+) no-repeat center center; }
-  .twitter:hover {
     opacity: 0.8;
     transition: all 0.2s; }
 
@@ -772,12 +772,21 @@ li {
     opacity: 0.8;
     transition: all 0.2s; }
 
-.email {
+.medium {
   height: 2em;
   margin: 0 .5em;
   width: 2em;
-  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAgMjYwIj48cGF0aCBmaWxsPSIjRUY1NDFFIiBkPSJNMTMwIDBDNTguMiAwIDAgNTguMiAwIDEzMHM1OC4yIDEzMCAxMzAgMTMwczEzMC01OC4yIDEzMC0xMzBTMjAxLjggMCAxMzAgMHogTTY2LjQgODVoMTI2LjkgYzYuNyAwIDMuMyA3LjctMC40IDkuNmMtMy43IDItNTQuNCAyOS4yLTU2LjIgMzAuMnMtNC4zIDEuNS02LjggMS41Yy0yLjUgMC00LjktMC41LTYuOC0xLjVTNzAuNSA5Ni42IDY2LjggOTQuNiBDNjMuMSA5Mi43IDU5LjcgODUgNjYuNCA4NXogTTE5Ny41IDE2Ny41YzAgMy4yLTQuMiA3LjUtNy41IDcuNUg3MGMtMy4zIDAtNy41LTQuMy03LjUtNy41YzAgMCAwLTUzLjMgMC01NC43YzAtMS40IDAtMy4yIDIuOS0xLjYgYzQuMiAyLjIgNTUuMSAyOC45IDU3LjcgMzAuMnM0LjMgMS41IDYuOCAxLjVjMi41IDAgNC4yLTAuMiA2LjgtMS41czUzLjgtMjggNTgtMzAuMmMyLjktMS41IDIuOSAwLjMgMi45IDEuNiBDMTk3LjUgMTE0LjIgMTk3LjUgMTY3LjUgMTk3LjUgMTY3LjV6Ii8+PC9zdmc+) no-repeat center center; }
-  .email:hover {
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNjAgMjYwIj48cGF0aCBmaWxsPSIjMDBBQjZDIiBkPSJNMTMwIDBDNTguMiAwIDAgNTguMiAwIDEzMHM1OC4yIDEzMCAxMzAgMTMwIDEzMC01OC4yIDEzMC0xMzBTMjAxLjggMCAxMzAgMHpNMTA4LjcgMTc5LjljMCAyLjctMS40IDQuMy0zLjUgNC4zIC0wLjcgMC0xLjUtMC4yLTIuNC0wLjZsLTMzLjItMTYuNmMtMS45LTEtMy41LTMuNi0zLjUtNS43Vjc5LjhjMC0yLjEgMS4yLTMuNCAyLjgtMy40IDAuNiAwIDEuMiAwLjIgMS45IDAuNWwzNy43IDE4LjljMC4xIDAuMSAwLjIgMC4yIDAuMiAwLjRWMTc5Ljl6TTExNC44IDE0Ni45di00MS4xbDM2LjYgNTkuNEwxMTQuOCAxNDYuOXpNMTI3IDExNGwyMi4yLTM2LjFjMC44LTEuMyAyLjMtMiAzLjctMiAwLjQgMCAwLjcgMC4xIDEuMSAwLjEgMC4zIDAuMSAwLjYgMC4yIDAuOCAwLjNsMzguNiAxOS4zIDAgMGMwIDAgMCAwIDAuMSAwLjEgMC4yIDAuMSAwLjIgMC40IDAuMSAwLjZsLTM4LjggNjMuMUwxMjcgMTE0ek0xOTQgMTc5LjljMCAzLjYtMy4yIDUtNy4xIDMuMWwtMzAuMS0xNSAzNy4yLTYwLjRWMTc5Ljl6Ii8+PC9zdmc+) no-repeat center center; }
+  .medium:hover {
+    opacity: 0.8;
+    transition: all 0.2s; }
+
+.twitter {
+  height: 2em;
+  margin: 0 .5em;
+  width: 2em;
+  background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj48cGF0aCBmaWxsPSIjNTVBQ0VFIiBkPSJNMTI1IDBDNTYgMCAwIDU2IDAgMTI1czU2IDEyNSAxMjUgMTI1czEyNS01NiAxMjUtMTI1UzE5NCAwIDEyNSAweiBNMTc1LjkgMTAyLjRjMC4xIDEuMSAwLjEgMi4xIDAuMSAzLjIgYzAgMzIuNi0yNC43IDcwLjEtNzAgNzAuMWMtMTMuOSAwLTI2LjgtNC4xLTM3LjgtMTEuMWMxLjkgMC4yIDMuOSAwLjMgNS45IDAuM2MxMS41IDAgMjIuMS0zLjkgMzAuNS0xMC41IGMtMTAuOC0wLjItMTkuOC03LjMtMjMtMTcuMWMxLjUgMC4zIDMgMC40IDQuNiAwLjRjMi4yIDAgNC40LTAuMyA2LjUtMC45Yy0xMS4zLTIuMS0xOS44LTEyLjEtMTkuOC0yNHYtMC4zYzMuMyAxLjggNy4xIDMgMTEuMSAzLjEgYy02LjYtNC40LTEwLjktMTEuOS0xMC45LTIwLjVjMC00LjUgMS4yLTguNyAzLjMtMTIuNGMxMi4xIDE0LjkgMzAuMiAyNC42IDUwLjggMjUuN2MtMC40LTEuOC0wLjYtMy43LTAuNi01LjYgYzAtMTMuNiAxMS0yNC42IDI0LjYtMjQuNmM3LjEgMCAxMy41IDMgMTcuOSA3LjhjNS42LTEuMSAxMC45LTMuMSAxNS42LTZjLTEuOCA1LjctNS43IDEwLjYtMTAuOCAxMy42YzUtMC42IDkuNy0xLjkgMTQuMS0zLjkgQzE4NC44IDk0LjYgMTgwLjcgOTkgMTc1LjkgMTAyLjR6Ii8+PC9zdmc+) no-repeat center center; }
+  .twitter:hover {
     opacity: 0.8;
     transition: all 0.2s; }
 
@@ -804,7 +813,7 @@ footer {
 
 .footer-social {
   display: table;
-  width: 15em;
+  width: 18em;
   margin: 0 auto 1.5em; }
 
 #hero-personal-info {
@@ -844,7 +853,7 @@ footer {
 
 .hero-social {
   display: table;
-  width: 15em;
+  width: 18em;
   margin: 0 auto 6em auto; }
 
 .work-item {
@@ -923,7 +932,7 @@ footer {
     opacity: 0;
     position: absolute; }
   .view-case-study:hover {
-    color: #ef541e; }
+    color: #ff3d33; }
     .view-case-study:hover:after {
       transition: all 0.2s;
       left: 105%;
