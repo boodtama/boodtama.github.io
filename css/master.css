@@ -1077,6 +1077,47 @@ ul.hero-sidebar-list {
       .main-content-image:last-child {
         margin-right: 0; } }
 
+.main-content-image-small {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: 25.5894128995%;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em; }
+  .main-content-image-small:last-child {
+    margin-right: 0; }
+  p.main-content-image-small {
+    color: #acacac;
+    font-family: "roboto-light-italic", "Helvetica", "Arial", sans-serif;
+    font-size: 0.875em;
+    /*14pt*/
+    margin-top: 0;
+    margin-bottom: 3em;
+    text-align: center; }
+  @media screen and (min-width: 30em) and (max-width: 47.99375em) {
+    .main-content-image-small {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%;
+      padding-left: 1em;
+      padding-right: 1em; }
+      .main-content-image-small:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 29.99375em) {
+    .main-content-image-small {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 100%;
+      margin-left: 0%;
+      padding-left: 1em;
+      padding-right: 1em; }
+      .main-content-image-small:last-child {
+        margin-right: 0; } }
+
 .main-content-list {
   clear: both; }
   ul.main-content-list {
