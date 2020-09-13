@@ -1085,7 +1085,7 @@ ul.hero-sidebar-list {
     margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-left: 17.0596085997%;
-    padding-left: 1em;
+    padding-left: 2em;
     margin-top: -1.5em;
     margin-bottom: 1.5em; }
     ul.main-content-list:last-child {
@@ -1097,13 +1097,12 @@ ul.hero-sidebar-list {
         margin-right: 2.3576515979%;
         width: 100%;
         margin-left: 0%;
-        padding-left: 2em;
         padding-right: 1em; }
         ul.main-content-list:last-child {
           margin-right: 0; } }
   li.main-content-list {
     display: list-item;
-    list-style: disc inside;
+    list-style: disc outside;
     width: 100%; }
 
 .more-work-item {
