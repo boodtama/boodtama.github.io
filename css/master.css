@@ -614,9 +614,9 @@ hr {
     hr {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%;
       margin-top: 1.5em;
       margin-bottom: 1.5em; }
       hr:last-child {
@@ -625,9 +625,9 @@ hr {
     hr {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%;
       margin-top: 3em;
       margin-bottom: 3em; }
       hr:last-child {
@@ -638,18 +638,18 @@ hr {
       hr.bottom-divider {
         float: left;
         display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%; }
+        margin-right: 2.3576515979%;
+        width: 82.9403914003%;
+        margin-left: 8.5298042998%; }
         hr.bottom-divider:last-child {
           margin-right: 0; } }
     @media screen and (max-width: 29.99375em) {
       hr.bottom-divider {
         float: left;
         display: block;
-        margin-right: 2.35765%;
-        width: 82.94039%;
-        margin-left: 8.5298%;
+        margin-right: 2.3576515979%;
+        width: 82.9403914003%;
+        margin-left: 8.5298042998%;
         margin-top: 3em;
         margin-bottom: 3em; }
         hr.bottom-divider:last-child {
@@ -819,9 +819,9 @@ footer {
 #hero-personal-info {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
-  margin-left: 25.58941%;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: 25.5894128995%;
   margin-top: 10.125em;
   text-align: center; }
   #hero-personal-info:last-child {
@@ -836,18 +836,18 @@ footer {
     #hero-personal-info {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      margin-left: 17.0596085997%; }
       #hero-personal-info:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 29.99375em) {
     #hero-personal-info {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%; }
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%; }
       #hero-personal-info:last-child {
         margin-right: 0; } }
 
@@ -869,8 +869,8 @@ footer {
 .work-image {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 57.35098%; }
+  margin-right: 2.3576515979%;
+  width: 57.3509785009%; }
   .work-image:last-child {
     margin-right: 0; }
   @media screen and (min-width: 48em) and (max-width: 75em) {
@@ -880,16 +880,16 @@ footer {
     .work-image {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%; }
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%; }
       .work-image:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 29.99375em) {
     .work-image {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       padding-left: 1em;
       padding-right: 1em; }
@@ -899,8 +899,8 @@ footer {
 .work-text {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 40.29137%;
+  margin-right: 2.3576515979%;
+  width: 40.2913699012%;
   padding: 3em 0 0 1.5em; }
   .work-text:last-child {
     margin-right: 0; }
@@ -908,16 +908,16 @@ footer {
     .work-text {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%; }
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      margin-left: 17.0596085997%; }
       .work-text:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 29.99375em) {
     .work-text {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       padding-left: 1em;
       padding-right: 1em; }
@@ -941,8 +941,8 @@ footer {
 #hero-project-descrip {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
   margin-top: 10.125em;
   padding: 0 1.5em 0 0;
   margin-bottom: 3em; }
@@ -958,9 +958,9 @@ footer {
     #hero-project-descrip {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      margin-left: 17.0596085997%;
       margin-bottom: 0; }
       #hero-project-descrip:last-child {
         margin-right: 0; } }
@@ -968,7 +968,7 @@ footer {
     #hero-project-descrip {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       margin-bottom: 0;
       padding: 0 1em; }
@@ -978,8 +978,8 @@ footer {
 .hero-sidebar {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 23.23176%;
+  margin-right: 2.3576515979%;
+  width: 23.2317613015%;
   margin-top: 10.125em;
   padding: 3.5em 0 0; }
   .hero-sidebar:last-child {
@@ -994,9 +994,9 @@ footer {
     .hero-sidebar {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 14.70196%;
-      margin-left: 17.05961%;
+      margin-right: 2.3576515979%;
+      width: 14.7019570017%;
+      margin-left: 17.0596085997%;
       margin-top: 0;
       padding: 0; }
       .hero-sidebar:last-child {
@@ -1005,7 +1005,7 @@ footer {
     .hero-sidebar {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       margin-top: 0;
       padding: 0 1em; }
@@ -1021,16 +1021,16 @@ ul.hero-sidebar-list {
 .main-content-copy {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 65.88078%;
-  margin-left: 17.05961%; }
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%; }
   .main-content-copy:last-child {
     margin-right: 0; }
   h2.main-content-copy {
     margin-top: 0.75em;
     text-align: center; }
   ul.main-content-copy {
-    margin-left: 8.5298%;
+    margin-left: 8.5298042998%;
     margin-bottom: 3em; }
   li.main-content-copy {
     list-style-type: disc;
@@ -1039,7 +1039,7 @@ ul.hero-sidebar-list {
     .main-content-copy {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       margin-left: 0%;
       padding-left: 1em;
@@ -1050,9 +1050,9 @@ ul.hero-sidebar-list {
 .main-content-image {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 82.94039%;
-  margin-left: 8.5298%;
+  margin-right: 2.3576515979%;
+  width: 82.9403914003%;
+  margin-left: 8.5298042998%;
   margin-top: 1.5em;
   margin-bottom: 1.5em; }
   .main-content-image:last-child {
@@ -1069,7 +1069,7 @@ ul.hero-sidebar-list {
     .main-content-image {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       margin-left: 0%;
       padding-left: 1em;
@@ -1082,9 +1082,9 @@ ul.hero-sidebar-list {
   ul.main-content-list {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%;
+    margin-right: 2.3576515979%;
+    width: 65.8807828007%;
+    margin-left: 17.0596085997%;
     padding-left: 1em;
     margin-top: -1.5em;
     margin-bottom: 1.5em; }
@@ -1094,7 +1094,7 @@ ul.hero-sidebar-list {
       ul.main-content-list {
         float: left;
         display: block;
-        margin-right: 2.35765%;
+        margin-right: 2.3576515979%;
         width: 100%;
         margin-left: 0%;
         padding-left: 2em;
@@ -1119,17 +1119,17 @@ ul.hero-sidebar-list {
 .more-work-image {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 31.76157%;
-  margin-left: 8.5298%; }
+  margin-right: 2.3576515979%;
+  width: 31.7615656014%;
+  margin-left: 8.5298042998%; }
   .more-work-image:last-child {
     margin-right: 0; }
   @media screen and (min-width: 35em) and (max-width: 48em) {
     .more-work-image {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 40.29137%;
+      margin-right: 2.3576515979%;
+      width: 40.2913699012%;
       margin-left: 0%;
       padding-left: 1em; }
       .more-work-image:last-child {
@@ -1138,16 +1138,16 @@ ul.hero-sidebar-list {
     .more-work-image {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 82.94039%;
-      margin-left: 8.5298%; }
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%; }
       .more-work-image:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 29.99375em) {
     .more-work-image {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       margin-left: 0%;
       padding-left: 1em;
@@ -1158,8 +1158,8 @@ ul.hero-sidebar-list {
 .more-work-text {
   float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 48.82117%;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
   padding: 0.75em 0 0 1.5em; }
   .more-work-text:last-child {
     margin-right: 0; }
@@ -1167,8 +1167,8 @@ ul.hero-sidebar-list {
     .more-work-text {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 57.35098%;
+      margin-right: 2.3576515979%;
+      width: 57.3509785009%;
       padding-top: 0; }
       .more-work-text:last-child {
         margin-right: 0; } }
@@ -1176,9 +1176,9 @@ ul.hero-sidebar-list {
     .more-work-text {
       float: left;
       display: block;
-      margin-right: 2.35765%;
-      width: 65.88078%;
-      margin-left: 17.05961%;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      margin-left: 17.0596085997%;
       padding: 2.25em 0 0; }
       .more-work-text:last-child {
         margin-right: 0; } }
@@ -1186,7 +1186,7 @@ ul.hero-sidebar-list {
     .more-work-text {
       float: left;
       display: block;
-      margin-right: 2.35765%;
+      margin-right: 2.3576515979%;
       width: 100%;
       margin-left: 0%;
       padding: 2.25em 1em 0 1em; }
