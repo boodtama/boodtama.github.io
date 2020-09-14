@@ -75,7 +75,7 @@ p {
 
 a {
   color: $action-color;
-  font-family: $link-font-family;
+  font-family: $medium-font-family;
   text-decoration: none;
 
   &:active,
@@ -137,4 +137,8 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.strong {
+  font-family: $medium-font-family;
 }

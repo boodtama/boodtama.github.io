@@ -660,6 +660,9 @@ picture {
   margin: 0;
   max-width: 100%; }
 
+.strong {
+  font-family: "roboto-medium", "Helvetica", "Arial", sans-serif; }
+
 #nav-wrapper {
   background: #fff;
   background: rgba(255, 255, 255, 0.9);
