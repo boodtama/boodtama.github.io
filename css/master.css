@@ -397,7 +397,7 @@ button {
   appearance: none;
   -webkit-font-smoothing: antialiased;
   background-color: #ff3d33;
-  border-radius: 3px;
+  border-radius: 0.5em;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -447,28 +447,37 @@ select[multiple=multiple],
 textarea {
   background-color: #fff;
   border: 2px solid #ebebeb;
-  border-radius: 3px;
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  border-radius: 0.25em;
   box-sizing: border-box;
   font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
-  margin-bottom: 3em;
-  padding: 2em;
+  margin-bottom: 1.5em;
+  padding: 1.2em;
   transition: border-color;
   width: 100%; }
   input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
   select[multiple=multiple]:hover,
   textarea:hover {
-    border-color: #d2d2d2; }
+    border-color: #dedede; }
   input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus,
   textarea:focus {
-    border-color: #ff3d33;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(255, 37, 26, 0.7);
+    border-color: #dedede;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.06), 0 0 5px rgba(210, 210, 210, 0.7);
     outline: none; }
 
 textarea {
   resize: vertical; }
+
+input[type="submit"] {
+  border: 0;
+  border-radius: 0.25em;
+  padding: 1.5em; }
+  input[type="submit"]:hover, input[type="submit"]:focus {
+    background: #ff645c;
+    transition: all 0.2s; }
+  input[type="submit"]:active {
+    background: #ff160a; }
 
 input[type="search"] {
   -webkit-appearance: none;
@@ -673,6 +682,68 @@ picture {
 
 .strong {
   font-family: "roboto-medium", "Helvetica", "Arial", sans-serif; }
+
+.staticrypt-form {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 48.821174201%;
+  margin-left: 25.5894128995%;
+  border-radius: 0.5em;
+  /*max-width: 360px;*/
+  margin-bottom: 1.5em;
+  padding: 4.5em 3em 3em;
+  box-shadow: 0 0 1.5em 0 #ebebeb, 0 0.5em 0.5em 0 #ebebeb; }
+  .staticrypt-form:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 30em) and (max-width: 47.99375em) {
+    .staticrypt-form {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
+      margin-left: 17.0596085997%;
+      padding: 3em; }
+      .staticrypt-form:last-child {
+        margin-right: 0; } }
+  @media screen and (max-width: 29.99375em) {
+    .staticrypt-form {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 82.9403914003%;
+      margin-left: 8.5298042998%;
+      padding: 3em; }
+      .staticrypt-form:last-child {
+        margin-right: 0; } }
+
+.staticrypt-decrypt-button {
+  text-transform: uppercase;
+  width: 100%;
+  color: #fff;
+  cursor: pointer; }
+
+.staticrypt-instructions {
+  margin-top: -1em;
+  margin-bottom: 1em; }
+
+.staticrypt-footer {
+  position: fixed;
+  height: 20px;
+  font-size: 16px;
+  padding: 2px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 0; }
+
+.staticrypt-footer p {
+  margin: 2px;
+  text-align: center;
+  float: right; }
+
+.staticrypt-footer a {
+  text-decoration: none; }
 
 #nav-wrapper {
   background: #fff;
