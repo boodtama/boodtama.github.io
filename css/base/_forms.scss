@@ -31,22 +31,22 @@ select[multiple=multiple],
 textarea {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius;
-  box-shadow: $form-box-shadow;
+  border-radius: $base-border-radius / 2;
+  //box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
-  margin-bottom: $base-spacing / 2;
-  padding: $base-spacing / 3;
+  margin-bottom: $small-spacing;
+  padding: 1.2em;
   transition: border-color;
   width: 100%;
 
   &:hover {
-    border-color: darken($base-border-color, 10%);
+    border-color: $form-focus-color;
   }
 
   &:focus {
-    border-color: $action-color;
+    border-color: $form-focus-color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
   }
@@ -54,6 +54,22 @@ textarea {
 
 textarea {
   resize: vertical;
+}
+
+input[type="submit"]{
+  border: 0;
+  border-radius: $base-border-radius / 2;
+  padding: 1.5em;
+
+  &:hover,
+  &:focus {
+    background: lighten($action-color, 8%);
+    transition: $base-transition;
+  }
+
+  &:active {
+    background: darken($action-color, 8%);
+  }
 }
 
 input[type="search"] {

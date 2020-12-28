@@ -105,20 +105,35 @@ ul.hero-sidebar-list {
 
 }
 
+.main-content-image-medium {
+  @include span-columns(8);
+  @include shift(2);
+  margin-top: $small-spacing;
+  margin-bottom: $small-spacing;
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(767.9)) {
+    @include span-columns(10);
+    @include shift(1);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    @include shift(0);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+}
+
 .main-content-image-small {
   @include span-columns(6);
   @include shift(3);
   margin-top: $small-spacing;
   margin-bottom: $small-spacing;
-
-  @at-root p#{&} {
-    color: $medium-gray;
-    font-family: $caption-font-family;
-    font-size: ($base-font-size * 0.875); /*14pt*/;
-    margin-top: 0;
-    margin-bottom: $medium-spacing;
-    text-align: center;
-  }
 
   //Responsive medium screen
   @include media(min-width em(480) max-width em(767.9)) {
@@ -161,6 +176,38 @@ ul.hero-sidebar-list {
     list-style: disc outside;
     width: 100%;
   }
+}
+
+.main-content-video {
+  @include span-columns(10);
+  @include shift(1);
+  overflow: hidden;
+  position: relative;
+  margin-top: $small-spacing;
+  margin-bottom: $small-spacing;
+
+  &::after {
+    padding-top: 56.25%;
+    display: block;
+    content: '';
+  }
+
+  & > iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    @include shift(0);
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
 }
 
 

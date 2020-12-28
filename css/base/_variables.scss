@@ -17,7 +17,7 @@ $base-line-height: 1.75;
 $heading-line-height: 1.2;
 
 // Other Sizes
-$base-border-radius: 3px;
+$base-border-radius: 0.5em;
 $base-spacing: 6em;
 $medium-spacing: $base-spacing / 2;
 $small-spacing: $base-spacing / 4;
@@ -42,8 +42,9 @@ $base-border-color: $light-gray;
 $base-border: 2px solid $base-border-color;
 
 // Forms
-$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
-$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+$form-focus-color: darken($base-border-color, 5%);
+$form-box-shadow: inset 0 1px 4px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($form-focus-color, $lightness: -5%, $alpha: -0.3);
 
 // Interactions
 $base-hover-opacity: 0.8;
