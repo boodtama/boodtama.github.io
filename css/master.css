@@ -1211,9 +1211,7 @@ ul.hero-sidebar-list {
       display: block;
       margin-right: 2.3576515979%;
       width: 82.9403914003%;
-      margin-left: 8.5298042998%;
-      padding-left: 1em;
-      padding-right: 1em; }
+      margin-left: 8.5298042998%; }
       .main-content-image-small:last-child {
         margin-right: 0; } }
   @media screen and (max-width: 29.99375em) {
@@ -1221,10 +1219,8 @@ ul.hero-sidebar-list {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
-      width: 100%;
-      margin-left: 0%;
-      padding-left: 1em;
-      padding-right: 1em; }
+      width: 91.4701957002%;
+      margin-left: 4.2649021499%; }
       .main-content-image-small:last-child {
         margin-right: 0; } }
 
@@ -1290,6 +1286,9 @@ ul.hero-sidebar-list {
       .main-content-video:last-child {
         margin-right: 0; } }
 
+.rounded {
+  border-radius: 1em; }
+
 .more-work-item {
   max-width: 68em;
   margin-left: auto;
@@ -1338,9 +1337,6 @@ ul.hero-sidebar-list {
       padding-right: 1em; }
       .more-work-image:last-child {
         margin-right: 0; } }
-
-.rounded {
-  border-radius: 1em; }
 
 .more-work-text {
   float: left;
