@@ -1075,12 +1075,23 @@ footer {
   @media screen and (max-width: 479px) {
     .hero-sidebar {
       margin-top: 7.125em; } }
-  @media screen and (min-width: 30em) and (max-width: 75em) {
+  @media screen and (min-width: 48em) and (max-width: 75em) {
     .hero-sidebar {
       float: left;
       display: block;
       margin-right: 2.3576515979%;
       width: 14.7019570017%;
+      margin-left: 17.0596085997%;
+      margin-top: 0;
+      padding: 0; }
+      .hero-sidebar:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 30em) and (max-width: 47.99375em) {
+    .hero-sidebar {
+      float: left;
+      display: block;
+      margin-right: 2.3576515979%;
+      width: 65.8807828007%;
       margin-left: 17.0596085997%;
       margin-top: 0;
       padding: 0; }
@@ -1102,6 +1113,9 @@ ul.hero-sidebar-list {
   margin-bottom: 1.5em; }
   ul.hero-sidebar-list li {
     width: 100%; }
+
+.outcomes {
+  margin-bottom: 0.75em; }
 
 .main-content-copy {
   float: left;
