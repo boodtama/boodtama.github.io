@@ -1075,7 +1075,7 @@ footer {
   @media screen and (max-width: 479px) {
     .hero-sidebar {
       margin-top: 7.125em; } }
-  @media screen and (min-width: 35.5625em) and (max-width: 75em) {
+  @media screen and (min-width: 38.75em) and (max-width: 75em) {
     .hero-sidebar {
       float: left;
       display: block;
@@ -1086,7 +1086,7 @@ footer {
       padding: 0; }
       .hero-sidebar:last-child {
         margin-right: 0; } }
-  @media screen and (min-width: 30em) and (max-width: 34.99375em) {
+  @media screen and (min-width: 30em) and (max-width: 38.74375em) {
     .hero-sidebar {
       float: left;
       display: block;
