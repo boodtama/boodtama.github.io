@@ -137,8 +137,8 @@ ul.hero-sidebar-list {
 
   //Responsive medium screen
   @include media(min-width em(480) max-width em(767.9)) {
-    @include span-columns(10);
-    @include shift(1);
+    @include span-columns(9);
+    @include shift(1.5);
   }
 
   //Responsive small screen
