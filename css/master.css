@@ -397,7 +397,7 @@ button {
   appearance: none;
   -webkit-font-smoothing: antialiased;
   background-color: #ff3d33;
-  border-radius: 0.5em;
+  border-radius: 1em;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -447,7 +447,7 @@ select[multiple=multiple],
 textarea {
   background-color: #fff;
   border: 2px solid #ebebeb;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   box-sizing: border-box;
   font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
@@ -471,7 +471,7 @@ textarea {
 
 input[type="submit"] {
   border: 0;
-  border-radius: 0.25em;
+  border-radius: 0.5em;
   padding: 1.5em; }
   input[type="submit"]:hover, input[type="submit"]:focus {
     background: #ff645c;
@@ -689,7 +689,7 @@ picture {
   margin-right: 2.3576515979%;
   width: 48.821174201%;
   margin-left: 25.5894128995%;
-  border-radius: 0.5em;
+  border-radius: 1em;
   /*max-width: 360px;*/
   margin-bottom: 1.5em;
   padding: 4.5em 3em 3em;
@@ -1338,6 +1338,9 @@ ul.hero-sidebar-list {
       padding-right: 1em; }
       .more-work-image:last-child {
         margin-right: 0; } }
+
+.rounded {
+  border-radius: 1em; }
 
 .more-work-text {
   float: left;

@@ -243,6 +243,10 @@ ul.hero-sidebar-list {
   }
 }
 
+.rounded {
+  border-radius: $base-border-radius;
+}
+
 .more-work-text {
   @include span-columns(6);
   padding: $extra-small-spacing 0 0 $small-spacing;
