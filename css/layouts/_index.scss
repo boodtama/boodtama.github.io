@@ -34,8 +34,14 @@
   @include span-columns(7);
 
   //Responsive large screen
-  @include media(min-width em(768) max-width em(1200)) {
-    padding-left: 1em;
+  @include media(min-width em(960) max-width em(1200)) {
+    padding-left: $medium-spacing;
+  }
+
+  //Responsive medium to large screen
+  @include media(min-width em(768) max-width em(959.9)) {
+    @include span-columns(6);
+    padding-left: $medium-spacing;
   }
 
   //Responsive medium screen
@@ -54,19 +60,31 @@
 
 .work-text {
   @include span-columns(5);
-  padding: $medium-spacing 0 0 $small-spacing;
+  padding: $medium-spacing 0 0 $medium-spacing;
+
+  //Responsive large screen
+  @include media(min-width em(960) max-width em(1200)) {
+    padding: $medium-spacing $extra-small-spacing 0 $medium-spacing;
+  }
+
+  //Responsive medium to large screen
+  @include media(min-width em(768) max-width em(959.9)) {
+    @include span-columns(6);
+    padding: $extra-small-spacing $medium-spacing 0 $small-spacing;
+  }
 
   //Responsive medium screen
-  @include media(min-width em(480) max-width em(768)) {
+  @include media(min-width em(480) max-width em(767.9)) {
     @include span-columns(8);
     @include shift(2);
+    padding: $medium-spacing 0 0 0;
   }
 
   //Responsive small screen
   @include media(max-width em(479.9)) {
-    @include span-columns(12);
-    padding-left: 1em;
-    padding-right: 1em;
+    @include span-columns(10);
+    @include shift(1);
+    padding: $medium-spacing 0 0 0;
   }
 }
 
@@ -74,6 +92,7 @@
 // View case study link
 .view-case-study {
 	position: relative;
+  padding: $extra-small-spacing 0;
 
   &:after {
   	content: "\2192";
