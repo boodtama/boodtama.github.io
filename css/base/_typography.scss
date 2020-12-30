@@ -43,7 +43,7 @@ h6 {
     margin: 0 0 $extra-small-spacing;
 
     &.project-name {
-      margin-bottom: 0.2em;
+      margin-bottom: 0.4em;
     }
 }
 
@@ -60,12 +60,6 @@ p {
     color: $medium-gray;
     font-size: ($base-font-size * 0.875); /*14pt*/
     margin: 0;
-
-    &-team {
-      color: $medium-gray;
-      font-size: ($base-font-size * 0.875); /*14pt*/
-      margin: 0 0 $small-spacing;
-    }
   }
 
   &.legal {
@@ -79,6 +73,10 @@ p {
     @include media(max-width em(1200)) {
       margin-bottom: ($small-spacing + $extra-small-spacing);
     }
+  }
+
+  &.work-text-description {
+    margin-top: $small-spacing;
   }
 
 }

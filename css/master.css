@@ -586,7 +586,7 @@ h6 {
   h4.project-name,
   h5.project-name,
   h6.project-name {
-    margin-bottom: 0.2em; }
+    margin-bottom: 0.4em; }
 
 p {
   margin: 0 0 1.5em; }
@@ -600,11 +600,6 @@ p {
     font-size: 0.875em;
     /*14pt*/
     margin: 0; }
-    p.label-team {
-      color: #acacac;
-      font-size: 0.875em;
-      /*14pt*/
-      margin: 0 0 1.5em; }
   p.legal {
     color: #acacac;
     font-size: 0.75em;
@@ -613,6 +608,8 @@ p {
   @media screen and (max-width: 75em) {
     p.project-overview {
       margin-bottom: 2.25em; } }
+  p.work-text-description {
+    margin-top: 1.5em; }
 
 a {
   color: #ff3d33;
