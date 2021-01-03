@@ -605,6 +605,18 @@ p {
     font-size: 0.75em;
     /*12pt*/
     margin: 0; }
+  p.password-required {
+    background-color: #fff;
+    border: 1px solid #ebebeb;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.375em 0 #ebebeb, 0 0 0.1875em 0 #ebebeb;
+    color: #acacac;
+    display: inline-block;
+    font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
+    font-size: 0.8em;
+    margin-bottom: 0;
+    padding: 0.1875em 0.375em;
+    vertical-align: 1px; }
   @media screen and (max-width: 75em) {
     p.project-overview {
       margin-bottom: 2.25em; } }
