@@ -23,6 +23,33 @@
   margin: 0 auto $base-spacing auto;
 }
 
+.new {
+  @include span-columns(8);
+  @include shift(2);
+  border-radius: $base-border-radius;
+  box-shadow: 0 0 $small-spacing 0 $base-border-color, 0 0.5em 0.5em 0 $base-border-color;
+  margin-bottom: $medium-spacing;
+  padding: $small-spacing;
+  transition: $base-transition;
+
+  //Responsive medium screen
+  @include media(min-width em(600) max-width em(767.9)) {
+    @include span-columns(10);
+    @include shift(1);
+    padding: $small-spacing;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(599.9)) {
+    @include span-columns(12);
+    @include shift(0);
+    padding: $extra-small-spacing;
+  }
+
+  &:hover {
+    transform: scale($base-scale);
+  }
+}
 
 // Work listing
 .work-item {
@@ -32,6 +59,11 @@
 
 .work-image {
   @include span-columns(7);
+  transition: $base-transition;
+
+  &:hover {
+    transform: scale($base-scale);
+  }
 
   //Responsive large screen
   @include media(min-width em(960) max-width em(1200)) {

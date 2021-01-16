@@ -230,6 +230,11 @@ ul.hero-sidebar-list {
 .more-work-image {
   @include span-columns(4);
   @include shift(1);
+  transition: $base-transition;
+
+  &:hover {
+    transform: scale($base-scale);
+  }
 
   //Responsive medium screen
   @include media(min-width em(560) max-width em(768)) {

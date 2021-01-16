@@ -2,10 +2,9 @@
   @include span-columns(6);
   @include shift(3);
   border-radius: $base-border-radius;
-  /*max-width: 360px;*/
+  box-shadow: 0 0 $small-spacing 0 $base-border-color, 0 0.5em 0.5em 0 $base-border-color;
   margin-bottom: $small-spacing;
   padding: $medium-spacing + $small-spacing $medium-spacing $medium-spacing;
-  box-shadow: 0 0 $small-spacing 0 $base-border-color, 0 0.5em 0.5em 0 $base-border-color;
 
   //Responsive medium screen
   @include media(min-width em(480) max-width em(767.9)) {

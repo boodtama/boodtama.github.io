@@ -68,6 +68,11 @@ p {
     margin: 0;
   }
 
+  &.new-text {
+    font-size: ($base-font-size * 1.25); /*20pt*/
+    margin: 0;
+  }
+
   &.password-required {
     background-color: $base-background-color;
     border: 1px solid $base-border-color;
