@@ -9,7 +9,6 @@
     <title>Kevin Boodtama, product design leader</title>
     <link href="css/master.css" rel="stylesheet" type="text/css" />
     <link rel="shortcut icon" type="image/jpg" href="images/favicon.png" />
-    <script src="js/jquery-1.11.2.min.js"></script>
 
     <!-- Hotjar -->
     <script>
@@ -28,20 +27,19 @@
   <body>
 
     <script>
-    jQuery(document).ready(function() {
+      function scrollToWork(event) {
+        //Prevent default link behavior
+        event.preventDefault();
 
-    var scrollWin = function (selector) {
-        jQuery('html, body').animate({
-        scrollTop: jQuery(selector).offset().top -90
-        }, 500);
+        //Scroll to target section
+        window.scrollTo({
+            top: document.getElementById("work").offsetTop - 90,
+            behavior: "smooth"
+        });
+
+        //Remove focus
+        event.target.blur();
       }
-
-      jQuery("[href^=#]").click(function(e) {
-        scrollWin (jQuery(this).attr("href"));
-        return false;
-      });
-
-    });
     </script>
 
     <!-- Navigation -->
@@ -53,7 +51,7 @@
 
         <nav>
           <ul>
-            <li><a class="nav-text" href="#work">Work</a></li>
+            <li><a class="nav-text" id="scrollToWork" href="#work" onClick="scrollToWork(event)">Work</a></li>
             <li><a class="nav-text" href="about.html">About</a></li>
             <li><a class="nav-text" href="http://medium.com/@boodtama" target="blank">Writing</a></li>
           </ul>
