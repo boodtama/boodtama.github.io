@@ -862,7 +862,8 @@ picture {
 
 #nav-wrapper {
   background: #fff;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
   position: fixed;
   top: 0px;
   width: 100%;
