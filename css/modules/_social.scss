@@ -1,6 +1,6 @@
 @mixin social-table {
     display: table;
-    width: 18em;
+    width: fit-content;
 }
 
 @mixin social-icon {
