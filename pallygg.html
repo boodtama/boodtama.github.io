@@ -80,6 +80,8 @@
         <p class="label">MY ROLES</p>
         <ul class="hero-sidebar-list">
           <li class="hero-sidebar-list">Co-Founder</li>
+          <li class="hero-sidebar-list">Product Design</li>
+          <li class="hero-sidebar-list">No-code Development</li>
         </ul>
         <p class="label">OUTCOMES</p>
         <ul class="hero-sidebar-list">
@@ -124,6 +126,8 @@
       <h2 class="main-content-copy">One customer to many</h2>
       <p class="main-content-copy">With a working MVP, we needed to validate the concept further. We seeded a pipeline of leads by finding streamers who ran charity fundraisers, and cold emailed them, thinking that if they were generous enough to do that, they’d be more likely to run a campaign for their own mods. It worked. After enough cold emails (hundreds), we had a couple dozen prospects signed up.</p>
       <p class="main-content-copy">On the product side, everything was still incredibly scrappy, with a lot of unscalable work being done. We shipped a landing page with a basic sign up form, which put them into an “early access” queue. There was no self-signup flow yet, so each team’s tip page was manually created by entering rows into a database, and often required some email back-and-forth. We’d manually calculate the splits for each tip, then send users their payouts one by one.</p>
+      <img alt="Evolution of the dashboard" class="main-content-image" src="images/pallygg/pallygg-dashboard-evolution.png" />
+      <p class="main-content-image">Evolution of the dashboard over time, as we added more features.</p>
       <p class="main-content-copy">In the meantime, we tried to get onto discovery calls with each prospect and learn as much as possible. We also set up a Discord server and funneled users there, to establish a community space and engage with users who had any questions. These tactics proved to be greatly effective, in that they both established trust with these early creators, and their feedback gave us a clear product roadmap to build on.</p>
 
       <h2 class="main-content-copy">Beginning to scale</h2>
@@ -132,20 +136,18 @@
       <img alt="Creator sign up flow" class="main-content-image" src="images/pallygg/pallygg-sign-up-creator.png" />
       <p class="main-content-image">The start of the creator sign up flow. If they sign up with Twitch, we can pre-fill their account details: username display name, and profile picture. If they prefer to log in with email and password, they can connect their Twitch account afterwards.</p>
       <p class="main-content-copy">Users were categorized into two groups: creators, who were the owners of the page, and team members joining to receive a split of the funds. After a creator set up their page, they could invite their team members, and set up their split. Once everyone had joined, they could go live and immediately receive funds. Users with an account joining other teams simply needed to log in after receiving an invite link, and they were done.</p>
+      <img alt="Connect PayPal flow" class="main-content-image" src="images/pallygg/pallygg-connect-paypal.png" />
+      <p class="main-content-image">We iterated to have users connect their PayPal account, which was key to allow us to automate payouts. It also reduced fraud and prevented errors caused by users entering an incorrect PayPal email address.</p>
       <p class="main-content-copy">Over time, we iterated and improved this process:</p>
       <ul class="main-content-list">
         <li class="main-content-list">We simplified account creation by allowing users to sign up using their Twitch account via OAuth. As we required creators to link their Twitch account anyway, creators who went this path could skip that step.</li>
         <li class="main-content-list">We improved security and reduced operational overhead by having users connect their PayPal account. In the original MVP, this was just an input field for a PayPal email address, which would often lead to errors.</li>
         <li class="main-content-list">We added an onboarding guide for creators, to give them clear next steps, and encourage them to use features that would optimize their performance while waiting for their team member to join.</li>
       </ul>
-      <img alt="Connect PayPal flow" class="main-content-image" src="images/pallygg/pallygg-connect-paypal.png" />
-      <p class="main-content-image">We iterated to have users connect their PayPal account, which was key to allow us to automate payouts. It also reduced fraud and prevented errors caused by users entering an incorrect PayPal email address.</p>
-      <img alt="Creating a tip page" class="main-content-image" src="images/pallygg/pallygg-create-tip-page.png" />
-      <p class="main-content-image">To create their tip page, we presented creators with easy defaults, using learnings from our early access period. They could create their page with one click, or customize their page further as they liked.</p>
-      <img alt="Screenshot of the Pally dashboard" class="main-content-image" src="images/pallygg/pallygg-dashboard-onboarding.png" />
-      <p class="main-content-image">After creating their tip page, users land on their dashboard. They are guided with options to finish onboarding, and shown details of their tip page.</p>
       <img alt="Editing a team’s tip splits" class="main-content-image" src="images/pallygg/pallygg-edit-tip-splits.png" />
-      <p class="main-content-image">Creators can invite up to 14 other teammates, organize them into categories, and customize their tip splits to their liking.</p>
+      <p class="main-content-image">After creating a tip page, creators can invite up to 14 other teammates, organize them into categories, and customize their tip splits to their liking.</p>
+      <img alt="Design epxlorations for editing tip splits" class="main-content-image" src="images/pallygg/pallygg-edit-tip-splits-exploration.png" />
+      <p class="main-content-image">Additional design explorations for editing tip splits.</p>
       
       <h2 class="main-content-copy">Balancing customer feedback</h2>
       <p class="main-content-copy">One of the hardest things in iterating a product is being disciplined enough to know what not to build, as much as what to build. We got so much feedback, and many, many ideas from our community. This is a double edged sword—if we implemented everything, we’d end up with an unfocused product. Users need to know what problem your product solves, and it can’t be “everything”.</p>
