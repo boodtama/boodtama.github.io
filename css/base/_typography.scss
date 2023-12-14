@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-family: $heading-font-family;
-  font-size: ($base-font-size * 2.25); /*36pt*/
+  font-size: ($base-font-size * 2.5); /*40pt*/
   line-height: $heading-line-height;
   margin: 0 0 ($extra-small-spacing / 2);
 
@@ -38,7 +38,7 @@ h4,
 h5,
 h6 {
     font-family: $heading-font-family;
-    font-size: ($base-font-size * 1.5); /*24pt*/
+    font-size: ($base-font-size * 1.875); /*30pt*/
     line-height: $heading-line-height;
     margin: 0 0 $extra-small-spacing;
 
@@ -49,6 +49,7 @@ h6 {
 
 p {
   margin: 0 0 $small-spacing;
+  font-size: $base-font-size * 1.125; /*18pt*/
 
   &.hero {
     font-size: ($base-font-size * 1.5); /*24pt*/
@@ -58,18 +59,18 @@ p {
 
   &.label {
     color: $medium-gray;
-    font-size: ($base-font-size * 0.875); /*14pt*/
+    font-size: ($base-font-size); /*16pt*/
     margin: 0;
   }
 
   &.legal {
     color: $medium-gray;
-    font-size: ($base-font-size * 0.75); /*12pt*/
+    font-size: ($base-font-size * 0.875); /*14pt*/
     margin: 0;
   }
 
   &.new-text {
-    font-size: ($base-font-size * 1.25); /*20pt*/
+    font-size: ($base-font-size * 1.5); /*24pt*/
     margin: 0;
   }
 

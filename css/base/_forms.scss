@@ -15,7 +15,7 @@ select {
 
 label {
   font-weight: 600;
-  margin-bottom: $small-spacing / 2;
+  margin-bottom: calc($small-spacing / 2);
 
   &.required::after {
     content: "*";
@@ -31,7 +31,7 @@ select[multiple=multiple],
 textarea {
   background-color: $base-background-color;
   border: $base-border;
-  border-radius: $base-border-radius / 2;
+  border-radius: calc($base-border-radius / 2);
   //box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
@@ -58,7 +58,7 @@ textarea {
 
 input[type="submit"]{
   border: 0;
-  border-radius: $base-border-radius / 2;
+  border-radius: calc($base-border-radius / 2);
   padding: 1.5em;
 
   &:hover,
@@ -79,7 +79,7 @@ input[type="search"] {
 input[type="checkbox"],
 input[type="radio"] {
   display: inline;
-  margin-right: $small-spacing / 2;
+  margin-right: calc($small-spacing / 2);
 }
 
 input[type="file"] {

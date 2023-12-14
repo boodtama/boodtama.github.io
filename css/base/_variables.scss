@@ -19,9 +19,9 @@ $heading-line-height: 1.2;
 // Other Sizes
 $base-border-radius: 1em;
 $base-spacing: 6em;
-$medium-spacing: $base-spacing / 2;
-$small-spacing: $base-spacing / 4;
-$extra-small-spacing: $base-spacing / 8;
+$medium-spacing: calc($base-spacing / 2);
+$small-spacing: calc($base-spacing / 4);
+$extra-small-spacing: calc($base-spacing / 8);
 $base-z-index: 0;
 $nav-content-height: 3.75em; /*60px*/
 $nav-total-height: 5.625em; /*90px*/
@@ -30,7 +30,7 @@ $base-scale: 1.02;
 // Colors
 $orange: #ff3d33;
 $dark-gray: #363636;
-$medium-gray: #acacac;
+$medium-gray: #a1a1a1;
 $light-gray: #ebebeb;
 
 // Font Colors

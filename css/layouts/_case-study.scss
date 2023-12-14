@@ -100,7 +100,7 @@ ul.hero-sidebar-list {
   @at-root p#{&} {
     color: $medium-gray;
     font-family: $caption-font-family;
-    font-size: ($base-font-size * 0.875); /*14pt*/;
+    font-size: $base-font-size; /*16pt*/;
     margin-top: 0;
     margin-bottom: $medium-spacing;
     text-align: center;
