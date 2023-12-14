@@ -61,7 +61,7 @@
     <div class="outer-container">
       <header id="hero-project-descrip">
         <h1>Pally.gg</h1>
-        <p class="project-overview">Pally.gg is a payments platform that splits viewer tips given to Twitch streamers. These streamers employ a team of moderators, or mods, that help keep the stream running smoothly. While streamers are the primary entertainers, mods play a vital role behind-the-scenes, much like production staff does in traditional television—however, as many streamers can’t afford to pay their team, most work as unpaid volunteers. Pally gives these streamers a free solution that leverages their audience to get their mods paid.</p>
+        <p class="project-overview">Pally.gg is a payments platform that splits viewer tips given to Twitch streamers. These streamers employ a team of moderators, or mods, that play a vital role behind-the-scenes, much like production staff does in traditional television. However, many streamers can’t afford to pay their team, so most work as unpaid volunteers. Pally provides a free solution that gets creator teams paid.</p>
         <p class="project-overview"><a href="https://pally.gg" target="_blank">View Live Site ↗︎</a></p>
       </header>
 
@@ -85,7 +85,8 @@
         </ul>
         <p class="label">OUTCOMES</p>
         <ul class="hero-sidebar-list">
-          <li class="hero-sidebar-list outcomes">&#x1F4C8; Bootstrapped from zero to $600,000 in creator payouts</li>
+          <li class="hero-sidebar-list outcomes">&#x1F4B0; Bootstrapped from zero to $600,000 in creator payouts</li>
+          <li class="hero-sidebar-list outcomes">&#x1F4C8; 21% average MoM revenue growth during tenure</li>
           <li class="hero-sidebar-list">&#x1F91D; Acquired in 2023</li>
         </ul>
       </aside>
@@ -101,7 +102,7 @@
       <p class="main-content-image">The tip page is the core of the product, where viewers can leave a tip with a message, and see how funds are split amongst the team.</p>
       <h2 class="main-content-copy">Deeply understanding customer needs</h2>
       <p class="main-content-copy">Seeing the content creator space as a growing market, we wanted to build something specifically in the streaming niche.</p>
-      <p class="main-content-copy">Originally, we set out to make a productivity tool for moderators, as they were an underserved group in the streaming community. However, as we talked to more and more mods, we learned that most didn’t want the job to feel like <i>work</i> and this accomplished just that.</p>
+      <p class="main-content-copy">Originally, we set out to make a productivity tool for moderators, as they were an underserved group in the streaming community. However, the more mods we talked to, we learned that most didn’t want the job to feel like <i>work</i> and this accomplished just that.</p>
       <p class="main-content-copy">Most mods are volunteers who ended up in the role organically, by being high-quality contributors to the community. As a streamer grows, mod workloads become increasingly demanding, to the point where the lines blur between volunteering and an unpaid job.</p>
       <p class="main-content-copy">Many streamers are aware of this—and even feel guilty about it—but they aren’t in a financial position to start paying their team wages. Add in the administrative headaches and tax consequences of having paid contractors, and it becomes an overwhelming proposition.</p>
       <div class="main-content-image-medium">
@@ -152,14 +153,23 @@
       <h2 class="main-content-copy">Balancing customer feedback</h2>
       <p class="main-content-copy">One of the hardest things in iterating a product is being disciplined enough to know what not to build, as much as what to build. We got so much feedback, and many, many ideas from our community. This is a double edged sword—if we implemented everything, we’d end up with an unfocused product. Users need to know what problem your product solves, and it can’t be “everything”.</p>
       <p class="main-content-copy">We had to stay dedicated to our core vision: that we made streamer payments a multiplayer experience.</p>
-      <p class="main-content-copy">For us, finding the right balance in giving creators customization tools meant answering a few questions:</p>
+      <img alt="Screenshot of editing tip alerts" class="main-content-image" src="images/pallygg/pallygg-edit-alert.png" />
+      <p class="main-content-image">Streamers can customize alerts that broadcast when they receive a tip, creating moments of surprise and excitement they share with their viewers.</p>
+      <p class="main-content-copy">Our most common feature requests were for customizing the on-stream integrations with Pally. For example, receiving a tip is a moment worth celebrating, and a core component of Pally’s product are tip alerts. They broadcast this moment, creating surprise and excitement that streamers and viewers share together, and generate organic, in-product marketing content. Streamers can customize alerts to fit their brand, but we were mindful of building this too far—there are entire products around alert customization, and Pally’s core value proposition is to automate payment splitting. We realized basic customization worked for the majority of creators, and instead opted to explore an API for more advanced streamers to connect to for full customization.</p>
+      <video class="main-content-image-medium" controls>
+        <source src="images/pallygg/pallygg-tip-alert.mp4" />
+      </video>
+      <p class="main-content-image">Tip alerts often lead to creators explaining how the platform works. For those that opted in at sign up, we were able to use these clips as organic marketing material to drive new sign ups.</p>
+      <p class="main-content-copy">Finding the right balance in giving creators customization tools meant answering a few questions:</p>
       <ul class="main-content-list">
         <li class="main-content-list">How much effort would this take to build?</li>
         <li class="main-content-list">How does this feature incentivize more tips?</li>
         <li class="main-content-list">Would not having this feature be a deal-breaker for streamers?</li>
       </ul>
+      <img alt="Diagram of tip goal feature" class="main-content-image" src="images/pallygg/pallygg-edit-tip-goal.png" />
+      <p class="main-content-image">Creators can customize a tip goal that displays on their Twitch broadcast and on their Pally tip page. While the goal amount is arbitrary, displaying the progress bar on-stream increases viewer engagement, and ultimately, tip conversions.</p>
 
-      <h2 class="main-content-copy">Reflections: building grit to overcome obstacles</h2>
+      <h2 class="main-content-copy">Building grit to overcome obstacles</h2>
       <p class="main-content-copy">For nearly six months, we were manually calculating user payouts in spreadsheets, and sending them through the PayPal interface. This grew to become a dreaded, incredibly time-consuming process. We paid users out every Monday. It would take hours. We knew we needed to automate.</p>
       <p class="main-content-copy">The harsh reality of building on top of another payments platform is the platform risk. We needed access to PayPal’s Mass Pay feature, which gave us an API to automatically process user payouts. However, this feature was locked behind a gate, and required approval from PayPal to build on top of.</p>
       <p class="main-content-copy">We applied, and heard nothing back. We followed up. Crickets.</p>
