@@ -125,6 +125,7 @@
 .view-case-study {
 	position: relative;
   padding: $extra-small-spacing 0;
+  font-size: $base-font-size * 1.125; /*18pt*/
 
   &:after {
   	content: "\2192";
