@@ -57,16 +57,6 @@ p {
     margin: $extra-small-spacing 0 $small-spacing;
   }
 
-  &.label {
-    color: $medium-gray;
-    font-size: ($base-font-size); /*16pt*/
-    margin: 0;
-  }
-
-  &.uppercase {
-    text-transform: uppercase;
-  }
-
   &.legal {
     color: $medium-gray;
     font-size: ($base-font-size * 0.875); /*14pt*/
@@ -77,6 +67,21 @@ p {
     font-size: ($base-font-size * 1.5); /*24pt*/
     margin: 0;
   }
+
+  &.password-required {
+    background-color: $base-background-color;
+    border: 1px solid $base-border-color;
+    border-radius: $base-border-radius / 2;
+    box-shadow: 0 0 ($extra-small-spacing / 2) 0 $base-border-color, 0 0 ($extra-small-spacing / 4) 0 $base-border-color;
+    color: $medium-gray;
+    display: inline-block;
+    font-family: $medium-font-family;
+    font-size: $base-font-size * 0.8;
+    margin-bottom: 0;
+    padding: ($extra-small-spacing / 4) ($extra-small-spacing / 2);
+    vertical-align: 1px;
+  }
+  
 
   &.project-overview {
     //Responsive screens
@@ -89,19 +94,6 @@ p {
     margin-top: $small-spacing;
   }
 
-}
-
-.tag {
-  background-color: $base-background-color;
-  border: 1px solid $base-border-color;
-  border-radius: calc($base-border-radius / 2);
-  color: $medium-gray;
-  display: inline-block;
-  font-family: $medium-font-family;
-  font-size: $base-font-size;
-  margin-bottom: 0;
-  padding: calc($extra-small-spacing / 4) calc($small-spacing / 2);
-  vertical-align: 1px;
 }
 
 a {
@@ -170,6 +162,35 @@ picture {
   max-width: 100%;
 }
 
+.label {
+  color: $medium-gray;
+  font-size: $base-font-size;
+  margin: 0;
+
+  &-large {
+    color: $medium-gray;
+    font-size: $base-font-size * 1.125;
+    margin: 0;
+  }
+}
+
+.tag {
+  background-color: $base-background-color;
+  border: 1px solid $base-border-color;
+  border-radius: calc($base-border-radius / 2);
+  color: $medium-gray;
+  display: inline-block;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  margin-bottom: 0;
+  padding: calc($extra-small-spacing / 4) calc($small-spacing / 2);
+  vertical-align: 1px;
+}
+
 .strong {
   font-family: $medium-font-family;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }

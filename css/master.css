@@ -652,7 +652,7 @@ h3.project-name,
 h4.project-name,
 h5.project-name,
 h6.project-name {
-  margin-bottom: 0.4em;
+  margin-bottom: 0.375em;
 }
 
 p {
@@ -663,11 +663,6 @@ p.hero {
   font-size: 1.5em; /*24pt*/
   line-height: 1.5;
   margin: 0.75em 0 1.5em;
-}
-p.label {
-  color: #a1a1a1;
-  font-size: 1em; /*16pt*/
-  margin: 0;
 }
 p.legal {
   color: #a1a1a1;
@@ -784,8 +779,36 @@ picture {
   max-width: 100%;
 }
 
+.label {
+  color: #a1a1a1;
+  font-size: 1em;
+  margin: 0;
+}
+.label-large {
+  color: #a1a1a1;
+  font-size: 1.125em;
+  margin: 0;
+}
+
+.tag {
+  background-color: #fff;
+  border: 1px solid #ebebeb;
+  border-radius: 0.5em;
+  color: #a1a1a1;
+  display: inline-block;
+  font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0;
+  padding: 0.1875em 0.75em;
+  vertical-align: 1px;
+}
+
 .strong {
   font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .staticrypt-form {
