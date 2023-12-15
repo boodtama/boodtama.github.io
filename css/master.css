@@ -484,7 +484,7 @@ label abbr {
 input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week],
 select[multiple=multiple],
 textarea {
-  background-color: #fff;
+  background-color: #fdfbfb;
   border: 2px solid #ebebeb;
   border-radius: 0.5em;
   box-sizing: border-box;
@@ -685,7 +685,7 @@ p.hero {
   margin: 0.75em 0 1.5em;
 }
 p.legal {
-  color: #a1a1a1;
+  color: #a8a6a6;
   font-size: 0.875em; /*14pt*/
   margin: 0;
 }
@@ -694,11 +694,11 @@ p.new-text {
   margin: 0;
 }
 p.password-required {
-  background-color: #fff;
+  background-color: #fdfbfb;
   border: 1px solid #ebebeb;
   border-radius: 0.5em;
   box-shadow: 0 0 0.375em 0 #ebebeb, 0 0 0.1875em 0 #ebebeb;
-  color: #a1a1a1;
+  color: #a8a6a6;
   display: inline-block;
   font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
   font-size: 0.8em;
@@ -821,21 +821,21 @@ picture {
 }
 
 .label {
-  color: #a1a1a1;
+  color: #a8a6a6;
   font-size: 1em;
   margin: 0;
 }
 .label-large {
-  color: #a1a1a1;
+  color: #a8a6a6;
   font-size: 1.125em;
   margin: 0;
 }
 
 .tag {
-  background-color: #fff;
+  background-color: #fdfbfb;
   border: 1px solid #ebebeb;
   border-radius: 0.5em;
-  color: #a1a1a1;
+  color: #a8a6a6;
   display: inline-block;
   font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
@@ -896,7 +896,7 @@ picture {
 .staticrypt-decrypt-button {
   text-transform: uppercase;
   width: 100%;
-  color: #fff;
+  color: #fdfbfb;
   cursor: pointer;
 }
 
@@ -927,8 +927,8 @@ picture {
 }
 
 #nav-wrapper {
-  background: #fff;
-  background: rgba(255, 255, 255, 0.8);
+  background: #fdfbfb;
+  background: rgba(253, 251, 251, 0.8);
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0px;
@@ -1005,6 +1005,10 @@ li {
   .nav-text {
     margin-left: 1.5em; /*24px*/
   }
+}
+
+body {
+  background-color: #fdfbfb;
 }
 
 .outer-container, .main-content {
@@ -1550,7 +1554,7 @@ li.main-content-copy {
   margin-right: 0;
 }
 p.main-content-image {
-  color: #a1a1a1;
+  color: #a8a6a6;
   font-family: "roboto-light-italic", "Helvetica", "Arial", sans-serif;
   font-size: 1em; /*16pt*/
   margin-top: 0;
