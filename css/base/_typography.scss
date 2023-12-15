@@ -15,7 +15,7 @@ h1 {
   font-family: $heading-font-family;
   font-size: ($base-font-size * 2.5); /*40pt*/
   line-height: $heading-line-height;
-  margin: 0 0 ($extra-small-spacing / 2);
+  margin: 0 0 calc($extra-small-spacing / 2);
 
   &.more-work {
     text-align: center;
@@ -43,7 +43,7 @@ h6 {
     margin: 0 0 $extra-small-spacing;
 
     &.project-name {
-      margin-bottom: 0.4em;
+      margin-bottom: calc($extra-small-spacing / 2)
     }
 }
 
@@ -63,6 +63,10 @@ p {
     margin: 0;
   }
 
+  &.uppercase {
+    text-transform: uppercase;
+  }
+
   &.legal {
     color: $medium-gray;
     font-size: ($base-font-size * 0.875); /*14pt*/
@@ -72,20 +76,6 @@ p {
   &.new-text {
     font-size: ($base-font-size * 1.5); /*24pt*/
     margin: 0;
-  }
-
-  &.password-required {
-    background-color: $base-background-color;
-    border: 1px solid $base-border-color;
-    border-radius: $base-border-radius / 2;
-    box-shadow: 0 0 ($extra-small-spacing / 2) 0 $base-border-color, 0 0 ($extra-small-spacing / 4) 0 $base-border-color;
-    color: $medium-gray;
-    display: inline-block;
-    font-family: $medium-font-family;
-    font-size: $base-font-size * 0.8;
-    margin-bottom: 0;
-    padding: ($extra-small-spacing / 4) ($extra-small-spacing / 2);
-    vertical-align: 1px;
   }
 
   &.project-overview {
@@ -99,6 +89,19 @@ p {
     margin-top: $small-spacing;
   }
 
+}
+
+.tag {
+  background-color: $base-background-color;
+  border: 1px solid $base-border-color;
+  border-radius: calc($base-border-radius / 2);
+  color: $medium-gray;
+  display: inline-block;
+  font-family: $medium-font-family;
+  font-size: $base-font-size;
+  margin-bottom: 0;
+  padding: calc($extra-small-spacing / 4) calc($small-spacing / 2);
+  vertical-align: 1px;
 }
 
 a {
