@@ -135,6 +135,7 @@
 
   &:hover {
     color: $orange;
+    text-decoration: none;
 
       &:after {
       transition: $base-transition;

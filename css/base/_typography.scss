@@ -13,7 +13,7 @@ body {
 
 h1 {
   font-family: $heading-font-family;
-  font-size: ($base-font-size * 2.5); /*40pt*/
+  font-size: ($base-font-size * 3.25); /*48pt*/
   line-height: $heading-line-height;
   margin: 0 0 calc($extra-small-spacing / 2);
 
@@ -26,9 +26,11 @@ h1 {
     margin: 0;
   }
 
-  //Responsive small screen
-  @include media(max-width em(479.9)) {
+  //Responsive medium screen
+  @include media(max-width em(619.9)) {
+    font-size: ($base-font-size * 2.5); /*40pt*/
     text-align: center;
+    margin: 0 0 calc($extra-small-spacing / 2);
   }
 }
 
@@ -43,9 +45,19 @@ h6 {
     margin: 0 0 $extra-small-spacing;
 
     &.project-name {
-      margin-bottom: calc($extra-small-spacing / 2)
+      margin-bottom: calc ($extra-small-spacing / 2);
+
+      //Responsive medium screen
+      @include media(max-width em(619.9)) {
+        text-align: center;
+      }
     }
-}
+
+    //Responsive medium screen
+    @include media(max-width em(619.9)) {
+      font-size: ($base-font-size * 1.5); /*24pt*/
+    }
+  }
 
 p {
   margin: 0 0 $small-spacing;
@@ -84,6 +96,10 @@ p {
   
 
   &.project-overview {
+    &:first-child {
+      margin-bottom: 1.125em;
+    }
+
     //Responsive screens
     @include media(max-width em(1200)) {
       margin-bottom: ($small-spacing + $extra-small-spacing);
@@ -104,13 +120,35 @@ a {
   &:active,
   &:focus,
   &:hover {
-    color: lighten($action-color, 20%);
-    transition: $base-transition;
+    text-decoration: underline;
   }
 
   &:active,
   &:focus {
     outline: none;
+  }
+
+  &.new-window {
+    position: relative;
+    width: fit-content;
+  
+    &:after {
+      content: "↗︎";
+      left: 100%;
+      opacity: 0;
+      position: absolute;
+    }
+  
+    &:hover {
+      color: $orange;
+      text-decoration: none;
+  
+        &:after {
+        transition: $base-transition;
+        left: 105%;
+        opacity: 1;
+      }
+    }
   }
 }
 
