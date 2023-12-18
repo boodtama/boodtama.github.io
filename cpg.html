@@ -5,11 +5,9 @@
     <meta charSet="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta name="description" content="I build digital products that move people and technology forward."/>
-    <!--
-    <link rel="preload" as="image" href="images/pallygg/pallygg-tip-page-ripmika.png"/>
-    <link rel="preload" as="image" href="images/pallygg/pallygg-testimonials.png"/>
-    <link rel="preload" as="image" href="images/pallygg/pallygg-first-customer-tip-page.png"/>
-    -->
+    <link rel="preload" as="image" href="images/cpg/cpg-profile.png"/>
+    <link rel="preload" as="image" href="images/cpg/cpg-follow.png"/>
+    <link rel="preload" as="image" href="images/cpg/cpg-profile-empty-states.png"/>
     <meta property="og:title" content="Kevin Boodtama, lead product designer"/>
     <meta property="og:description" content="I build digital products that move people and technology forward."/>
     <meta property="og:url" content="https://boodtama.com"/>
@@ -147,8 +145,30 @@
       <img alt="Delete wallet flow" class="main-content-image" src="images/cpg/cpg-delete-wallet.png" />
       <p class="main-content-image">Flow to unlink wallets, with additional friction added to ensure users understand the consequences of deleting.</p>
 
-      <h2 class="main-content-copy">Building a dashboard for admins</h2>
-
+      <h2 class="main-content-copy">Admin dashboard and points management</h2>
+      <p class="main-content-copy">Community managers needed a way to manage their rewards program within the app, so we built an admin dashboard for them.</p>
+      <p class="main-content-copy">Here, they can add and remove tokens that are supported by the app, and importantly, manage the rewards structure around specific tokens. As they experimented with token drops and ensuing rewards, we learned a great deal about what works and what doesn&rsquo;t—in particular, we learned about ways users could abuse rewards, and so we built safeguard features to prevent undesired behavior.</p>
+      <img alt="Adding a new collection from the admin dashboard" class="main-content-image" src="images/cpg/cpg-admin-new-collection.png" />
+      <p class="main-content-image">Adding a new collection that users can to earn points for holding. After entering the contract address, we automatically pull the remaining on-chain data to help the user verify they&rsquo;ve entered the correct address.</p>
+      <img alt="UI of different ways to customize point rewards" class="main-content-image" src="images/cpg/cpg-admin-edit-collection.png" />
+      <p class="main-content-image">Admins can customize how collections earn points, and add in safeguards to prevent misbehavior.</p>
+      <p class="main-content-copy">We added multiple levers for them to customize the rewards experience:</p>
+      <ul class="main-content-list">
+        <li class="main-content-list">Points type: allowing for monthly point accumulation or a fixed, one-time addition</li>
+        <li class="main-content-list">Points value: how many points users earn monthly or one-time</li>
+        <li class="main-content-list">Point overrides: allowing for more granular control over points for specific token IDs, in the event they want to assign greater value to certain tokens in a collection over others</li>
+        <li class="main-content-list">Holder limits: capping the number of tokens earning points in a collection, disincentivizing whale collectors from abusing the system</li>
+      </ul>
+      <img alt="Viewing POAP details from the admin dashboard" class="main-content-image" src="images/cpg/cpg-admin-edit-poap.png" />
+      <p class="main-content-image">Admins can add POAPs by their Event ID, and view details for POAPs they&rsquo;ve already added.</p>
+      <p class="main-content-copy">While CPG would occasionally release free new token collections, these were often high-effort productions. For recurring events like their weekly guest speaker series, they would more commonly issue POAPs, which made perfect sense as a lightweight solution. This allowed them to quickly give users an on-chain proof of attendance, and reward community participation. Rather than treating each POAP as its own collection, we lumped them into one collection that could be managed together.</p>
+      <p class="main-content-copy">Administrators can also download a raw data export of user data and their points, to be used for marketing segmentation, points analysis, or community events like raffles and giveaways.</p>
+      <img alt="Managing another admin&rsquo;s permissions" class="main-content-image" src="images/cpg/cpg-admin-edit-teammate.png" />
+      <p class="main-content-image">Admins can invite other teammates, and manage their permissions.</p>
+      <h2 class="main-content-copy">Blanklabel customization</h2>
+      <p class="main-content-copy">Member engagement is valuable to every web3 community. Because of this, we built the product with blanklabeling in mind. By allowing for a simple swap of colors and background assets, the app could be repurposed to fit any brand. This also opened doors for new revenue opportunities to sell the app as a loyalty SaaS.</p>
+      <img alt="Example mockups of blanklabeled app for other NFT communities" class="main-content-image" src="images/cpg/cpg-blanklabel-examples.png" />
+      <p class="main-content-image">Examples of branded blanklabel opportunities for other NFT communities.</p>
     </article>
 
     <div class="outer-container">
