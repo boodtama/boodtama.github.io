@@ -70169,6 +70169,20 @@ endobj
 
 1338 0 obj
   << /Annots [ << /A << /S /URI
+                        /URI (https\072\057\057sprise\056co)
+                        /Type /Action
+                     >>
+                  /Rect [ 54.000000 625.054688 83.718262 637.945312 ]
+                  /Subtype /Link
+               >>
+               << /A << /S /URI
+                        /URI (https\072\057\057pally\056gg)
+                        /Type /Action
+                     >>
+                  /Rect [ 54.000000 514.054688 90.953125 526.945312 ]
+                  /Subtype /Link
+               >>
+               << /A << /S /URI
                         /URI (mailto\072kevin\100boodtama\056com)
                         /Type /Action
                      >>
@@ -71545,13 +71559,13 @@ xref
 0000146199 00000 n
 0002785162 00000 n
 0002785191 00000 n
-0002785947 00000 n
-0002786027 00000 n
+0002786498 00000 n
+0002786578 00000 n
 trailer
 << /ID [ (some) (id) ]
    /Root 1340 0 R
    /Size 1341
 >>
 startxref
-2786092
+2786643
 %%EOF
