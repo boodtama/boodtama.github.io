@@ -1,6 +1,5 @@
 @include selection {
-  background: $action-color;
-  color: #fff;
+  background: $orange-highlight;
 }
 
 body {
@@ -45,7 +44,7 @@ h6 {
     margin: 0 0 $extra-small-spacing;
 
     &.project-name {
-      margin-bottom: calc ($extra-small-spacing / 2);
+      margin-bottom: (calc($extra-small-spacing / 2));
 
       //Responsive medium screen
       @include media(max-width em(619.9)) {
@@ -84,13 +83,13 @@ p {
     background-color: $base-background-color;
     border: 1px solid $base-border-color;
     border-radius: $base-border-radius / 2;
-    box-shadow: 0 0 ($extra-small-spacing / 2) 0 $base-border-color, 0 0 ($extra-small-spacing / 4) 0 $base-border-color;
+    box-shadow: 0 0 calc($extra-small-spacing / 2) 0 $base-border-color, 0 0 calc($extra-small-spacing / 4) 0 $base-border-color;
     color: $medium-gray;
     display: inline-block;
     font-family: $medium-font-family;
     font-size: $base-font-size * 0.8;
     margin-bottom: 0;
-    padding: ($extra-small-spacing / 4) ($extra-small-spacing / 2);
+    padding: calc($extra-small-spacing / 4) calc($extra-small-spacing / 2);
     vertical-align: 1px;
   }
   

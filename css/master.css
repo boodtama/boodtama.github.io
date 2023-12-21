@@ -484,7 +484,7 @@ label abbr {
 input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week],
 select[multiple=multiple],
 textarea {
-  background-color: #fdfbfb;
+  background-color: #faf7f4;
   border: 2px solid #ebebeb;
   border-radius: 0.5em;
   box-sizing: border-box;
@@ -598,13 +598,11 @@ th {
 }
 
 ::selection {
-  background: #ff3d33;
-  color: #fff;
+  background: #fbe0cc;
 }
 
 ::-moz-selection {
-  background: #ff3d33;
-  color: #fff;
+  background: #fbe0cc;
 }
 
 body {
@@ -654,7 +652,7 @@ h3.project-name,
 h4.project-name,
 h5.project-name,
 h6.project-name {
-  margin-bottom: calc 0.375em;
+  margin-bottom: 0.375em;
 }
 @media screen and (max-width: 38.74375em) {
   h2.project-name,
@@ -685,7 +683,7 @@ p.hero {
   margin: 0.75em 0 1.5em;
 }
 p.legal {
-  color: #a8a6a6;
+  color: #a19e9c;
   font-size: 0.875em; /*14pt*/
   margin: 0;
 }
@@ -694,11 +692,11 @@ p.new-text {
   margin: 0;
 }
 p.password-required {
-  background-color: #fdfbfb;
+  background-color: #faf7f4;
   border: 1px solid #ebebeb;
   border-radius: 0.5em;
   box-shadow: 0 0 0.375em 0 #ebebeb, 0 0 0.1875em 0 #ebebeb;
-  color: #a8a6a6;
+  color: #a19e9c;
   display: inline-block;
   font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
   font-size: 0.8em;
@@ -821,21 +819,21 @@ picture {
 }
 
 .label {
-  color: #a8a6a6;
+  color: #a19e9c;
   font-size: 1em;
   margin: 0;
 }
 .label-large {
-  color: #a8a6a6;
+  color: #a19e9c;
   font-size: 1.125em;
   margin: 0;
 }
 
 .tag {
-  background-color: #fdfbfb;
+  background-color: #faf7f4;
   border: 1px solid #ebebeb;
   border-radius: 0.5em;
-  color: #a8a6a6;
+  color: #a19e9c;
   display: inline-block;
   font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
   font-size: 1em;
@@ -896,7 +894,7 @@ picture {
 .staticrypt-decrypt-button {
   text-transform: uppercase;
   width: 100%;
-  color: #fdfbfb;
+  color: #faf7f4;
   cursor: pointer;
 }
 
@@ -927,8 +925,8 @@ picture {
 }
 
 #nav-wrapper {
-  background: #fdfbfb;
-  background: rgba(253, 251, 251, 0.8);
+  background: #faf7f4;
+  background: rgba(250, 247, 244, 0.8);
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0px;
@@ -1008,7 +1006,7 @@ li {
 }
 
 body {
-  background-color: #fdfbfb;
+  background-color: #faf7f4;
 }
 
 .outer-container, .main-content {
@@ -1554,7 +1552,7 @@ li.main-content-copy {
   margin-right: 0;
 }
 p.main-content-image {
-  color: #a8a6a6;
+  color: #a19e9c;
   font-family: "roboto-light-italic", "Helvetica", "Arial", sans-serif;
   font-size: 1em; /*16pt*/
   margin-top: 0;
