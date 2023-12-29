@@ -856,8 +856,9 @@ picture {
 }
 .label-miscellaneous {
   color: #a19e9c;
-  font-size: 1em;
-  margin: -0.75em 0 0.75em 0;
+  font-size: 1.125em;
+  font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
+  margin: -0.375em 0 1.5em 0;
   text-align: center;
 }
 
@@ -1482,7 +1483,7 @@ footer p {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 14.7019570017%;
+    width: 23.2317613015%;
     margin-left: 17.0596085997%;
     margin-top: 0;
     padding: 0;
@@ -1904,6 +1905,25 @@ li.main-content-list {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.spacer-bottom-med {
+  margin-bottom: 3em;
+}
+
+@media screen and (max-width: 38.74375em) {
+  .miscellaneous-col1 {
+    margin-bottom: 0 !important;
+  }
+}
+
+.miscellaneous-col2 {
+  margin-top: 1.75em;
+}
+@media screen and (max-width: 38.74375em) {
+  .miscellaneous-col2 {
+    margin-top: 0;
+  }
 }
 
 /*# sourceMappingURL=master.css.map */

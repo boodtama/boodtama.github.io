@@ -242,8 +242,9 @@ picture {
 
   &-miscellaneous {
     color: $medium-gray;
-    font-size: $base-font-size;
-    margin: -$extra-small-spacing 0 $extra-small-spacing 0;
+    font-size: $base-font-size * 1.125;
+    font-family: $medium-font-family;
+    margin: calc($extra-small-spacing / -2) 0 $small-spacing 0;
     text-align: center;
   }
 }
