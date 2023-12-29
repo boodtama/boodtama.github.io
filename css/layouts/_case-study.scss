@@ -239,6 +239,10 @@ ul.hero-sidebar-list {
   border-radius: $base-border-radius;
 }
 
+.rounded-half {
+  border-radius: calc($base-border-radius / 2);
+}
+
 //More Work
 .more-work-item {
   @include outer-container;

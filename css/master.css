@@ -1734,6 +1734,10 @@ li.main-content-list {
   border-radius: 1em;
 }
 
+.rounded-half {
+  border-radius: 0.5em;
+}
+
 .more-work-item {
   max-width: 68em;
   margin-left: auto;
