@@ -828,6 +828,12 @@ picture {
   font-size: 1.125em;
   margin: 0;
 }
+.label-miscellaneous {
+  color: #a19e9c;
+  font-size: 1em;
+  margin: -0.75em 0 0.75em 0;
+  text-align: center;
+}
 
 .tag {
   background-color: #faf7f4;
@@ -1552,12 +1558,20 @@ li.main-content-copy {
   margin-right: 0;
 }
 p.main-content-image {
+  float: left;
+  display: block;
+  margin-right: 2.3576515979%;
+  width: 65.8807828007%;
+  margin-left: 17.0596085997%;
   color: #a19e9c;
   font-family: "roboto-light-italic", "Helvetica", "Arial", sans-serif;
   font-size: 1em; /*16pt*/
   margin-top: 0;
   margin-bottom: 3em;
-  text-align: center;
+  padding: 0 1.5em;
+}
+p.main-content-image:last-child {
+  margin-right: 0;
 }
 
 @media screen and (max-width: 29.99375em) {

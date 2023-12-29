@@ -116,12 +116,14 @@ ul.hero-sidebar-list {
   margin-bottom: $small-spacing;
 
   @at-root p#{&} {
+    @include span-columns(8);
+    @include shift(2);
     color: $medium-gray;
     font-family: $caption-font-family;
     font-size: $base-font-size; /*16pt*/;
     margin-top: 0;
     margin-bottom: $medium-spacing;
-    text-align: center;
+    padding: 0 $small-spacing;
   }
 
   //Responsive small screen

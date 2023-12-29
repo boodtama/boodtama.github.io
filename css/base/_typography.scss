@@ -209,6 +209,13 @@ picture {
     font-size: $base-font-size * 1.125;
     margin: 0;
   }
+
+  &-miscellaneous {
+    color: $medium-gray;
+    font-size: $base-font-size;
+    margin: -$extra-small-spacing 0 $extra-small-spacing 0;
+    text-align: center;
+  }
 }
 
 .tag {
