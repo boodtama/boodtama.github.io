@@ -746,6 +746,28 @@ a.new-window:hover:after {
   left: 105%;
   opacity: 1;
 }
+a.back-to-top {
+  font-size: 1em;
+  position: relative;
+  width: fit-content;
+}
+a.back-to-top:after {
+  content: "↑";
+  left: 0%;
+  top: -25%;
+  opacity: 0;
+  position: absolute;
+}
+a.back-to-top:hover {
+  color: #ff3d33;
+  text-decoration: none;
+}
+a.back-to-top:hover:after {
+  transition: all 0.2s;
+  left: -15%;
+  top: -25%;
+  opacity: 1;
+}
 
 hr {
   border-bottom: 2px solid #ebebeb;
@@ -816,6 +838,10 @@ img,
 picture {
   margin: 0;
   max-width: 100%;
+}
+
+.center {
+  text-align: center;
 }
 
 .label {
