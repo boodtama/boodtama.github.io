@@ -1,13 +1,24 @@
 // Typography
+@font-face {
+    font-family: plus-jakarta-sans;
+    src:
+        url('../fonts/plus-jakarta-sans/plus-jakarta-sans-variable/PlusJakartaSans-Variable.woff2') format(woff2),
+        url('../fonts/plus-jakarta-sans/plus-jakarta-sans-variable/PlusJakartaSans-Variable.woff') format(woff),
+        url('../fonts/plus-jakarta-sans/plus-jakarta-sans-variable/PlusJakartaSans-Variable.eot') format(eot),
+        url('../fonts/plus-jakarta-sans/plus-jakarta-sans-variable/PlusJakartaSans-Variable.ttf') format(ttf);
+}
 @include font-face("montserrat-bold", "../fonts/montserrat/montserrat-bold/Montserrat-Bold", $file-formats: eot woff ttf svg);
 @include font-face("roboto-light", "../fonts/roboto/roboto-light/Roboto-Light-webfont", $file-formats: eot woff ttf svg);
 @include font-face("roboto-light-italic", "../fonts/roboto/roboto-light-italic/Roboto-LightItalic-webfont", $file-formats: eot woff ttf svg);
 @include font-face("roboto-medium", "../fonts/roboto/roboto-medium/Roboto-Medium-webfont", $file-formats: eot woff ttf svg);
+@include font-face("ibm-plex-sans-light", "../fonts/ibm-plex-sans/ibm-plex-sans-light/IBMPlexSans-Light", $file-formats: ttf);
+@include font-face("ibm-plex-sans-italic", "../fonts/ibm-plex-sans/ibm-plex-sans-italic/IBMPlexSans-Italic", $file-formats: ttf);
+@include font-face("ibm-plex-sans-medium", "../fonts/ibm-plex-sans/ibm-plex-sans-medium/IBMPlexSans-Medium", $file-formats: ttf);
 
-$heading-font-family: "montserrat-bold", "Helvetica", "Arial", sans-serif;
-$base-font-family: "roboto-light", "Helvetica", "Arial", sans-serif;
-$caption-font-family: "roboto-light-italic", "Helvetica", "Arial", sans-serif;
-$medium-font-family: "roboto-medium", "Helvetica", "Arial", sans-serif;
+$heading-font-family: "plus-jakarta-sans", "montserrat-bold", "Helvetica", "Arial", sans-serif;
+$base-font-family: "ibm-plex-sans-light", "roboto-light", "Helvetica", "Arial", sans-serif;
+$caption-font-family: "ibm-plex-sans-italic", "roboto-light-italic", "Helvetica", "Arial", sans-serif;
+$medium-font-family: "ibm-plex-sans-medium", "roboto-medium", "Helvetica", "Arial", sans-serif;
 
 // Font Sizes
 $base-font-size: 1em;
