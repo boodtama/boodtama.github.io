@@ -13,11 +13,13 @@
 @include font-face("roboto-medium", "../fonts/roboto/roboto-medium/Roboto-Medium-webfont", $file-formats: eot woff ttf svg);
 @include font-face("ibm-plex-sans-light", "../fonts/ibm-plex-sans/ibm-plex-sans-light/IBMPlexSans-Light", $file-formats: ttf);
 @include font-face("ibm-plex-sans-italic", "../fonts/ibm-plex-sans/ibm-plex-sans-italic/IBMPlexSans-Italic", $file-formats: ttf);
+@include font-face("ibm-plex-sans-regular", "../fonts/ibm-plex-sans/ibm-plex-sans-regular/IBMPlexSans-Regular", $file-formats: ttf);
 @include font-face("ibm-plex-sans-medium", "../fonts/ibm-plex-sans/ibm-plex-sans-medium/IBMPlexSans-Medium", $file-formats: ttf);
 
 $heading-font-family: "plus-jakarta-sans", "montserrat-bold", "Helvetica", "Arial", sans-serif;
 $base-font-family: "ibm-plex-sans-light", "roboto-light", "Helvetica", "Arial", sans-serif;
 $caption-font-family: "ibm-plex-sans-italic", "roboto-light-italic", "Helvetica", "Arial", sans-serif;
+$regular-font-family: "ibm-plex-sans-regular", "roboto-light", "Helvetica", "Arial", sans-serif;
 $medium-font-family: "ibm-plex-sans-medium", "roboto-medium", "Helvetica", "Arial", sans-serif;
 
 // Font Sizes

@@ -434,6 +434,12 @@ th {
   src: url("../fonts/ibm-plex-sans/ibm-plex-sans-italic/IBMPlexSans-Italic.ttf") format("truetype");
 }
 @font-face {
+  font-family: "ibm-plex-sans-regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/ibm-plex-sans/ibm-plex-sans-regular/IBMPlexSans-Regular.ttf") format("truetype");
+}
+@font-face {
   font-family: "ibm-plex-sans-medium";
   font-style: normal;
   font-weight: normal;
@@ -879,6 +885,7 @@ picture {
 .label-large {
   color: #a19e9c;
   font-size: 1.125em;
+  font-family: "ibm-plex-sans-regular", "roboto-light", "Helvetica", "Arial", sans-serif;
   margin: 0;
 }
 .label-miscellaneous {
