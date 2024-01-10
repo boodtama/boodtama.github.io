@@ -4,10 +4,17 @@
   @include first-section-margin-top;
   padding: 0 $small-spacing 0 0;
 
-  //Responsive medium to large screen
-  @include media(min-width em(480) max-width em(1200)) {
+  //Responsive large screen
+  @include media(min-width em(768) max-width em(1200)) {
     @include span-columns(8);
     @include shift(2);
+    margin-bottom: 0;
+  }
+
+  //Responsive medium screen
+  @include media(min-width em(620) max-width em(767.9)) {
+    @include span-columns(10);
+    @include shift(1);
     margin-bottom: 0;
   }
 
@@ -25,9 +32,16 @@
   margin-bottom: $medium-spacing;
 
   //Responsive medium to large screen
-  @include media(min-width em(480) max-width em(1200)) {
+  @include media(min-width em(768) max-width em(1200)) {
     @include span-columns(8);
     @include shift(2);
+    margin-bottom: 0;
+  }
+
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(767.9)) {
+    @include span-columns(10);
+    @include shift(1);
     margin-bottom: 0;
   }
 
@@ -44,21 +58,29 @@
   padding: 1em 0 0 0;
 
   //Responsive medium to large screen
-  @include media(min-width em(620) max-width em(1200)) {
+  @include media(min-width em(768) max-width em(1200)) {
     @include span-columns(3);
     @include shift(2);
     margin-top: 0;
     padding: 0;
   }
 
-  //Responsive small to medium screen
-  @include media(min-width em(480) max-width em(619.9)) {
-    @include span-columns(8);
-    @include shift(2);
+  //Responsive medium screen
+  @include media(min-width em(620) max-width em(767.9)) {
+    @include span-columns(4);
+    @include shift(1);
     margin-top: 0;
     padding: 0;
   }
 
+  //Responsive small to medium screen
+  @include media(min-width em(480) max-width em(619.9)) {
+    @include span-columns(10);
+    @include shift(1);
+    margin-top: 0;
+    padding: 0;
+  }
+  
   //Responsive small screen
   @include media(max-width em(479.9)) {
     @include span-columns(12);

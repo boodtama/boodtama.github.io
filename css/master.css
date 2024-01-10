@@ -1437,13 +1437,26 @@ footer p {
     margin-top: 7.125em;
   }
 }
-@media screen and (min-width: 30em) and (max-width: 75em) {
+@media screen and (min-width: 48em) and (max-width: 75em) {
   #hero-project-title {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-left: 17.0596085997%;
+    margin-bottom: 0;
+  }
+  #hero-project-title:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 38.75em) and (max-width: 47.99375em) {
+  #hero-project-title {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
     margin-bottom: 0;
   }
   #hero-project-title:last-child {
@@ -1475,13 +1488,26 @@ footer p {
 #hero-project-descrip:last-child {
   margin-right: 0;
 }
-@media screen and (min-width: 30em) and (max-width: 75em) {
+@media screen and (min-width: 48em) and (max-width: 75em) {
   #hero-project-descrip {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-left: 17.0596085997%;
+    margin-bottom: 0;
+  }
+  #hero-project-descrip:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (min-width: 30em) and (max-width: 47.99375em) {
+  #hero-project-descrip {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
     margin-bottom: 0;
   }
   #hero-project-descrip:last-child {
@@ -1512,7 +1538,7 @@ footer p {
 .hero-sidebar:last-child {
   margin-right: 0;
 }
-@media screen and (min-width: 38.75em) and (max-width: 75em) {
+@media screen and (min-width: 48em) and (max-width: 75em) {
   .hero-sidebar {
     float: left;
     display: block;
@@ -1526,13 +1552,27 @@ footer p {
     margin-right: 0;
   }
 }
+@media screen and (min-width: 38.75em) and (max-width: 47.99375em) {
+  .hero-sidebar {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 31.7615656014%;
+    margin-left: 8.5298042998%;
+    margin-top: 0;
+    padding: 0;
+  }
+  .hero-sidebar:last-child {
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 30em) and (max-width: 38.74375em) {
   .hero-sidebar {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 65.8807828007%;
-    margin-left: 17.0596085997%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
     margin-top: 0;
     padding: 0;
   }
