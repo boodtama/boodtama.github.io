@@ -1591,6 +1591,18 @@ li.main-content-copy {
   width: 100%;
 }
 
+@media screen and (min-width: 30em) and (max-width: 47.99375em) {
+  .main-content-copy {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+  }
+  .main-content-copy:last-child {
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 29.99375em) {
   .main-content-copy {
     float: left;
@@ -1633,6 +1645,32 @@ p.main-content-image {
 }
 p.main-content-image:last-child {
   margin-right: 0;
+}
+@media screen and (min-width: 30em) and (max-width: 47.99375em) {
+  p.main-content-image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+  }
+  p.main-content-image:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 29.99375em) {
+  p.main-content-image {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 100%;
+    margin-left: 0%;
+    padding-left: 2em;
+    padding-right: 2em;
+  }
+  p.main-content-image:last-child {
+    margin-right: 0;
+  }
 }
 
 @media screen and (max-width: 29.99375em) {

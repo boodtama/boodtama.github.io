@@ -100,6 +100,12 @@ ul.hero-sidebar-list {
     width: 100%;
   }
 
+  //Responsive medium screen
+  @include media(min-width em(480) max-width em(767.9)) {
+    @include span-columns(10);
+    @include shift(1);
+  }
+
   //Responsive small screen
   @include media(max-width em(479.9)) {
     @include span-columns(12);
@@ -124,6 +130,20 @@ ul.hero-sidebar-list {
     margin-top: 0;
     margin-bottom: $medium-spacing;
     padding: 0 $small-spacing;
+
+    // Responsive medium screen
+    @include media(min-width em(480) max-width em(767.9)) {
+      @include span-columns(10);
+      @include shift(1);
+    }
+    
+    //Responsive small screen
+    @include media(max-width em(479.9)) {
+      @include span-columns(12);
+      @include shift(0);
+      padding-left: 2em;
+      padding-right: 2em;
+    }
   }
 
   //Responsive small screen
