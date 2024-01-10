@@ -1782,6 +1782,20 @@ ul.main-content-list {
 ul.main-content-list:last-child {
   margin-right: 0;
 }
+@media screen and (min-width: 30em) and (max-width: 47.99375em) {
+  ul.main-content-list {
+    float: left;
+    display: block;
+    margin-right: 2.3576515979%;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  ul.main-content-list:last-child {
+    margin-right: 0;
+  }
+}
 @media screen and (max-width: 29.99375em) {
   ul.main-content-list {
     float: left;
