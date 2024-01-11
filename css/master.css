@@ -1263,14 +1263,9 @@ footer::after {
   content: "";
   display: table;
 }
-@media screen and (min-width: 30em) and (max-width: 75em) {
+@media screen and (max-width: 75em) {
   footer {
-    padding: 0.9375em 1em; /*15px top*/
-  }
-}
-@media screen and (max-width: 29.99375em) {
-  footer {
-    padding: 0.9375em 1em; /*15px top*/
+    padding: 1em 1em 1.5em 1em; /*15px top*/
   }
 }
 footer p {

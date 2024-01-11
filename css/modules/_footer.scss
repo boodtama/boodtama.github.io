@@ -4,13 +4,8 @@ footer {
   text-align: center;
 
   //Responsive medium screen
-  @include media(min-width em(480) max-width em(1200)) {
-    padding: ($base-font-size * 0.9375) 1em; /*15px top*/
-  }
-
-  //Responsive small screen
-  @include media(max-width em(479.9)) {
-    padding: ($base-font-size * 0.9375) 1em; /*15px top*/
+  @include media(max-width em(1200)) {
+    padding: 1em 1em $small-spacing 1em; /*15px top*/
   }
 
   p {
