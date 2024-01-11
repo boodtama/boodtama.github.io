@@ -1140,6 +1140,10 @@ li {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #faf7f4;
 }
@@ -1319,7 +1323,7 @@ footer p {
 .hero-social {
   display: table;
   width: fit-content;
-  margin: 0 auto 6em auto;
+  margin: 0 auto;
 }
 
 .new {
@@ -1514,6 +1518,10 @@ footer p {
   transition: all 0.2s;
   left: 105%;
   opacity: 1;
+}
+
+#work {
+  padding-top: 6em;
 }
 
 #hero-project-title {
@@ -2145,6 +2153,15 @@ li.main-content-list {
   .miscellaneous-col2 {
     margin-top: 0;
   }
+}
+
+#bff,
+#yesgogo,
+#driver-maps,
+#delivery-zones,
+#order-details,
+#order-reassignment {
+  scroll-behavior: smooth;
 }
 
 /*# sourceMappingURL=master.css.map */

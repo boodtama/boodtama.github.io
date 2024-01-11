@@ -20,7 +20,7 @@
 
 .hero-social{
   @include social-table;
-  margin: 0 auto $base-spacing auto;
+  margin: 0 auto;
 }
 
 .new {
@@ -149,4 +149,8 @@
     	opacity: 1;
     }
   }
+}
+
+#work {
+  padding-top: $base-spacing;
 }
