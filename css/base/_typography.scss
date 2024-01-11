@@ -161,17 +161,25 @@ a {
     &:after {
       content: "↗︎";
       left: 100%;
+      top: 0%;
       opacity: 0;
       position: absolute;
+      transition: $base-transition;
     }
   
     &:hover {
-      color: $orange;
+      color: $action-color;
       text-decoration: none;
+
+      //Dark mode
+      @media (prefers-color-scheme: dark) {
+        color: $action-color-dark;
+      }
   
         &:after {
         transition: $base-transition;
-        left: 105%;
+        left: 108%;
+        top: -18%;
         opacity: 1;
       }
     }
@@ -184,20 +192,26 @@ a {
   
     &:after {
       content: "↑";
-      left: 0%;
-      top: -25%;
+      left: -20%;
+      top: 10%;
       opacity: 0;
       position: absolute;
+      transition: $base-transition;
     }
   
     &:hover {
-      color: $orange;
+      color: $action-color;
       text-decoration: none;
+
+      //Dark mode
+      @media (prefers-color-scheme: dark) {
+        color: $action-color-dark;
+      }
   
         &:after {
         transition: $base-transition;
-        left: -15%;
-        top: -25%;
+        left: -20%;
+        top: -20%;
         opacity: 1;
       }
     }

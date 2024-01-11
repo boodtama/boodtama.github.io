@@ -7,9 +7,10 @@
   height: 2em;
   margin: 0 .5em;
   width: 2em;
+  transition: $base-transition;
 
   &:hover {
-    opacity: $base-hover-opacity;
+    transform: scale($base-scale * 1.12);
     transition: $base-transition;
   }
 }

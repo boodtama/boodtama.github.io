@@ -131,6 +131,7 @@
     left: 100%;
 	  opacity: 0;
   	position: absolute;
+    transition: $base-transition;
   }
 
   &:hover {
