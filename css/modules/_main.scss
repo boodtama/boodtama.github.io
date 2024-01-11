@@ -1,5 +1,9 @@
 body {
   background-color: $base-background-color;
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    background-color: $base-background-color-dark;
+  }
 }
 
 .outer-container, .main-content {

@@ -1,11 +1,17 @@
 #nav-wrapper {
   background: $base-background-color; //Fallback for rgba
-  background: rgba(250,247,244,0.8);
+  background: $nav-background-color;
   backdrop-filter: blur(4px);
   position: fixed;
   top: 0px;
   width: 100%;
   z-index: 1000;
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    background: $base-background-color-dark;
+    background: $nav-background-color-dark;
+  }
 }
 
 #nav-outer-container {
@@ -56,14 +62,24 @@ li {
   margin-left: $base-font-size * 3.125; /*50px*/
 
   &:hover {
-      color: lighten($action-color, 20%);
-      transition: $base-transition;
-      color: $action-color;
-      text-decoration: none;
+    color: lighten($action-color, 20%);
+    transition: $base-transition;
+    color: $action-color;
+    text-decoration: none;
+
+    //Dark mode
+    @media (prefers-color-scheme: dark) {
+      color: $action-color-dark;
+    }
   }
 
   //Responsive small screen
   @include media(max-width 479px) {
     margin-left: $base-font-size * 1.5; /*24px*/
+  }
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    color: $base-font-color-dark;
   }
 }

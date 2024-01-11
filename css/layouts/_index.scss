@@ -134,8 +134,13 @@
   }
 
   &:hover {
-    color: $orange;
+    color: $action-color;
     text-decoration: none;
+
+    //Dark mode
+    @media (prefers-color-scheme: dark) {
+      color: $action-color-dark;
+    }
 
       &:after {
       transition: $base-transition;

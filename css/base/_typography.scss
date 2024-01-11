@@ -1,5 +1,10 @@
 @include selection {
   background: $orange-highlight;
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    background: $seafoam-highlight;
+  }
 }
 
 body {
@@ -8,6 +13,11 @@ body {
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    color: $base-font-color-dark;
+  }
 }
 
 h1 {
@@ -96,6 +106,13 @@ p {
     margin-bottom: 0;
     padding: calc($extra-small-spacing / 4) calc($extra-small-spacing / 2);
     vertical-align: 1px;
+
+    //Dark mode
+    @media (prefers-color-scheme: dark) {
+      background-color: $base-background-color-dark;
+      border: 1px solid $base-border-color-dark;
+      box-shadow: 0 0 calc($extra-small-spacing / 2) 0 $base-border-color-dark, 0 0 calc($extra-small-spacing / 4) 0 $base-border-color-dark;
+    }
   }
   
 
@@ -120,6 +137,11 @@ a {
   color: $action-color;
   font-family: $medium-font-family;
   text-decoration: none;
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    color: $action-color-dark;
+  }
 
   &:active,
   &:focus,
@@ -188,6 +210,11 @@ hr {
   border-right: none;
   border-top: none;
   margin: 0 0 ($medium-spacing + $small-spacing);
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    border-bottom: $base-border-dark;
+  }
 
   //Responsive medium to large screen
   @include media(min-width em(480) max-width em(1200)) {
@@ -266,6 +293,12 @@ picture {
   margin-bottom: 0;
   padding: calc($extra-small-spacing / 4) calc($small-spacing / 2);
   vertical-align: 1px;
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    background-color: $base-background-color-dark;
+    border: 1px solid $base-border-color-dark;
+  }
 }
 
 .strong {

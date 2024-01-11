@@ -46,15 +46,26 @@ $orange-highlight: #fbe0cc;
 $dark-gray: #363636;
 $medium-gray: #a19e9c;
 $light-gray: #ebebeb;
-$base-background-color: #faf7f4;
+$off-white: #faf7f4;
+$cream: #faedde;
+$seafoam: #85e0d5;
+$seafoam-highlight: #3e514f;
+$base-background-color: $off-white;
+$nav-background-color: rgba(250,247,244,0.8);
+$base-background-color-dark: #202021;
+$nav-background-color-dark: rgba(32, 32, 33, 0.8);
 
 // Font Colors
 $base-font-color: $dark-gray;
+$base-font-color-dark: $cream;
 $action-color: $orange;
+$action-color-dark: $seafoam;
 
 // Border
 $base-border-color: $light-gray;
+$base-border-color-dark: $dark-gray;
 $base-border: 2px solid $base-border-color;
+$base-border-dark: 2px solid $base-border-color-dark;
 
 // Forms
 $form-focus-color: darken($base-border-color, 5%);
