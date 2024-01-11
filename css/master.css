@@ -1144,6 +1144,11 @@ html {
   scroll-behavior: smooth;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 body {
   background-color: #faf7f4;
 }

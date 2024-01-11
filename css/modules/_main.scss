@@ -2,6 +2,13 @@ html {
   scroll-behavior: smooth;
 }
 
+//Reduced-motion enabled
+ @media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
 body {
   background-color: $base-background-color;
   //Dark mode
