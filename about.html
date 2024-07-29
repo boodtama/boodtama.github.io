@@ -8,22 +8,22 @@
     <link rel="preload" as="image" href="images/home/home_pallygg.png"/>
     <link rel="preload" as="image" href="images/home/home_grubhub-corporate-group-orders.png"/>
     <link rel="preload" as="image" href="images/home/home_zoomer-restaurant-feedback-support.png"/>
-    <meta property="og:title" content="Kevin Boodtama, lead product designer"/>
+    <meta property="og:title" content="Kevin Boodtama, Product Design Leader"/>
     <meta property="og:description" content="I build digital products that move people and technology forward."/>
     <meta property="og:url" content="https://boodtama.com"/>
     <meta property="og:locale" content="en_US"/>
     <meta property="og:image" content="https://boodtama.com/images/og-image.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
-    <meta property="og:image:alt" content="Kevin Boodtama, lead product designer"/>
+    <meta property="og:image:alt" content="Kevin Boodtama, Product Design Leader"/>
     <meta property="og:type" content="website"/>
     <meta name="twitter:card" content="summary_large_image"/><meta name="twitter:creator" content="@boodtama"/>
-    <meta name="twitter:title" content="Kevin Boodtama, lead product designer"/>
+    <meta name="twitter:title" content="Kevin Boodtama, Product Design Leader"/>
     <meta name="twitter:description" content="I build digital products that move people and technology forward."/>
     <meta name="twitter:image" content="https://boodtama.com/images/og-image.png"/>
     <link href="css/master.css" rel="stylesheet" type="text/css" />
     <link rel="icon" type="image/x-icon" href="images/favicon.png" />
-    <title>Kevin Boodtama, lead product designer</title>
+    <title>Kevin Boodtama, Product Design Leader</title>
 
     <!-- Hotjar -->
     <script>
@@ -35,6 +35,28 @@
             c.src="//static.hotjar.com/c/hotjar-22516.js?sv=3";
             b.getElementsByTagName("head")[0].appendChild(c);
         })(window,document);
+    </script>
+
+    <!-- Calculate YOE -->
+    <script>
+      // Function to calculate experience years
+      function calculateExperienceYears() {
+        const startDate = new Date('2013-05-01');
+        const currentDate = new Date();
+        let experienceYears = currentDate.getFullYear() - startDate.getFullYear();
+        const isBeforeAnniversary = (currentDate.getMonth() < startDate.getMonth()) || (currentDate.getMonth() === startDate.getMonth() && currentDate.getDate() < startDate.getDate());
+
+        if (isBeforeAnniversary) {
+          experienceYears--;
+        }
+
+        return experienceYears;
+      }
+
+      // Insert the result into the span
+      document.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById('experience-years').textContent = calculateExperienceYears();
+      });
     </script>
 
   </head>
@@ -61,16 +83,19 @@
     <div class="outer-container">
       <header id="hero-personal-info">
         <h1 class="name">Kevin Boodtama</h1>
-        <p class="label-large uppercase">Lead Product Designer</p>
+        <p class="label-large uppercase">Product Design Leader</p>
       </header>
       <img alt="Photo of yours truly" class="main-content-image-small rounded" src="images/about/about.jpg" />
     </div>
 
     <!-- Main content -->
     <article class="main-content">
-      <p class="main-content-copy">I&rsquo;m a product designer based out of Raleigh, North Carolina, and currently the co-founder of <a href="https://sprise.co" target="_blank">Sprise</a>, a software development agency and product studio.</p>
+      <p class="main-content-copy">I&rsquo;m a product design leader based out of Raleigh, North Carolina, with over <span id="experience-years">11</span> years of experience building digital products.</p>
+      <p class="main-content-copy">I&rsquo;m currently the Head of Product at <a href="https://code4rena.com" target="_blank">Code4rena</a>, a smart contract auditing platform. We help secure onchain projects by connecting them with security researchers, who compete to find high-severity vulnerabilities and keep them out of production code.</p>
+      <p class="main-content-copy">Previously, I was the co-founder of <a href="https://sprise.co" target="_blank">Sprise</a>, a software development agency and product studio, helping our clients earn over $2.1M in aggregate revenue. I also co-founded <a href="https://pally.gg" target="_blank">Pally.gg</a>, a creator payments platform that has helped thousands of people from 80 different countries earn over $600,000 in aggregate, which was acquired in 2023.</p>
+      
       <p class="main-content-copy">I am a futurist. I find technology fascinating—it makes sci-if real, it stretches what is possible, and at its best, it gives people super powers. Witnessing breakthrough tech for the first time feels like magic. Through design thinking, I turn ideas into product experiences, hopefully with a little dash of that magic along the way.</p>
-      <p class="main-content-copy">I believe design is a team sport, and the best teams are built with intent. I help design teams mature, by developing junior and mid-level designers, and creating systems that make teams more effective.</p>
+      <p class="main-content-copy">Design is a team sport, and I believe the best teams are built with intent. I help design teams mature, by developing junior and mid-level designers, and creating systems that make teams more effective.</p>
       <p class="main-content-copy">I value…
         <ul class="main-content-list">
           <li class="main-content-list"><span class="strong">Integrity:</span> Creating value while upholding values. The business of doing good is good for business.</li>
