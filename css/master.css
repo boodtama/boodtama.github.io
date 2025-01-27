@@ -1081,6 +1081,10 @@ picture {
   text-decoration: none;
 }
 
+.staticrypt-remember {
+  display: none;
+}
+
 #nav-wrapper {
   background: #faf7f4;
   background: rgba(250, 247, 244, 0.8);
