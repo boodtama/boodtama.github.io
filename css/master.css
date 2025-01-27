@@ -536,6 +536,26 @@ textarea:focus {
   outline: none;
 }
 
+@media (prefers-color-scheme: dark) {
+  input[type=email], input[type=number], input[type=password], input[type=search], input[type=tel], input[type=text], input[type=url], input[type=color], input[type=date], input[type=datetime], input[type=datetime-local], input[type=month], input[type=time], input[type=week],
+  select[multiple=multiple],
+  textarea {
+    background-color: #252526;
+    border: 2px solid #363636;
+  }
+  input[type=email]:hover, input[type=number]:hover, input[type=password]:hover, input[type=search]:hover, input[type=tel]:hover, input[type=text]:hover, input[type=url]:hover, input[type=color]:hover, input[type=date]:hover, input[type=datetime]:hover, input[type=datetime-local]:hover, input[type=month]:hover, input[type=time]:hover, input[type=week]:hover,
+  select[multiple=multiple]:hover,
+  textarea:hover {
+    border-color: #434343;
+  }
+  input[type=email]:focus, input[type=number]:focus, input[type=password]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=url]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=month]:focus, input[type=time]:focus, input[type=week]:focus,
+  select[multiple=multiple]:focus,
+  textarea:focus {
+    border-color: #434343;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.06), 0 0 5px rgba(80, 80, 80, 0.7);
+    outline: none;
+  }
+}
 textarea {
   resize: vertical;
 }
@@ -553,6 +573,20 @@ input[type=submit]:active {
   background: #ff160a;
 }
 
+@media (prefers-color-scheme: dark) {
+  input[type=submit] {
+    background-color: #85e0d5;
+    color: #202021;
+  }
+  input[type=submit]:hover, input[type=submit]:focus {
+    background: #a6e8e0;
+    color: #202021;
+    transition: all 0.2s;
+  }
+  input[type=submit]:active {
+    background: #64d8ca;
+  }
+}
 input[type=search] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1005,6 +1039,12 @@ picture {
   }
   .staticrypt-form:last-child {
     margin-right: 0;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .staticrypt-form {
+    border: 2px solid #363636;
+    box-shadow: none;
   }
 }
 

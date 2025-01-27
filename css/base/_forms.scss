@@ -32,7 +32,6 @@ textarea {
   background-color: $base-background-color;
   border: $base-border;
   border-radius: calc($base-border-radius / 2);
-  //box-shadow: $form-box-shadow;
   box-sizing: border-box;
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -49,6 +48,26 @@ textarea {
     border-color: $form-focus-color;
     box-shadow: $form-box-shadow-focus;
     outline: none;
+  }
+}
+
+//Dark mode
+@media (prefers-color-scheme: dark) {
+  #{$all-text-inputs},
+  select[multiple=multiple],
+  textarea {
+    background-color: lighten($base-background-color-dark, 2%);
+    border: $base-border-dark;
+
+    &:hover {
+      border-color: lighten($base-border-color-dark, 5%);
+    }
+
+    &:focus {
+      border-color: lighten($base-border-color-dark, 5%);
+      box-shadow: $form-box-shadow-focus-dark;
+      outline: none;
+    }
   }
 }
 
@@ -69,6 +88,25 @@ input[type="submit"]{
 
   &:active {
     background: darken($action-color, 8%);
+  }
+}
+
+//Dark mode
+@media (prefers-color-scheme: dark) {
+  input[type="submit"]{
+    background-color: $action-color-dark;
+    color: $base-background-color-dark;
+
+    &:hover,
+    &:focus {
+      background: lighten($action-color-dark, 8%);
+      color: $base-background-color-dark;
+      transition: $base-transition;
+    }
+
+    &:active {
+      background: darken($action-color-dark, 8%);
+    }
   }
 }
 

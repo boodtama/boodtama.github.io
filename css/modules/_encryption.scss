@@ -19,6 +19,13 @@
     @include shift(1);
     padding: $medium-spacing;
   }
+
+  //Dark mode
+  @media (prefers-color-scheme: dark) {
+    border: 2px solid $base-border-color-dark;
+    box-shadow: none;
+    //box-shadow: 0 0 $small-spacing 0 darken($base-background-color-dark, 2%), 0 0.5em 0.5em 0 darken($base-background-color-dark, 3%);
+  }
 }
 
 .staticrypt-decrypt-button {
