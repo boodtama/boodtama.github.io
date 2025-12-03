@@ -6,8 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta name="description" content="I build digital products that move people and technology forward."/>
     <link rel="preload" as="image" href="images/pallygg/pallygg-tip-page-ripmika.png"/>
+    <link rel="preload" as="image" href="images/pallygg/pallygg-tip-page-ripmika-dark.png"/>
     <link rel="preload" as="image" href="images/pallygg/pallygg-testimonials.png"/>
+    <link rel="preload" as="image" href="images/pallygg/pallygg-testimonials-dark.png"/>
     <link rel="preload" as="image" href="images/pallygg/pallygg-first-customer-tip-page.png"/>
+    <link rel="preload" as="image" href="images/pallygg/pallygg-first-customer-tip-page-dark.png"/>
     <meta property="og:title" content="Kevin Boodtama, Product Design Leader"/>
     <meta property="og:description" content="I build digital products that move people and technology forward."/>
     <meta property="og:url" content="https://boodtama.com"/>
@@ -100,7 +103,11 @@
 
     <!-- Main content -->
     <article class="main-content">
-      <img alt="Screenshot of the Pally.gg tip page" class="main-content-image" src="images/pallygg/pallygg-tip-page-ripmika.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-tip-page-ripmika.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-tip-page-ripmika-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshot of the Pally.gg tip page" src="images/pallygg/pallygg-tip-page-ripmika.png" />
+      </picture>
       <p class="main-content-image">The tip page is the core of the product, where viewers can leave a tip with a message, and see how funds are split amongst the team.</p>
       <h2 class="main-content-copy">Deeply understanding customer needs</h2>
       <p class="main-content-copy">Seeing the content creator space as a growing market, we wanted to build something specifically in the streaming niche.</p>
@@ -115,31 +122,55 @@
       <p class="main-content-image">Creators love the product so much, they'd talk about it themselves. Payments on the platform become content, which we were able to use as organic, in-product marketing content (with their permission).</p>
       <p class="main-content-copy">A major portion of streamers&rsquo; revenue comes directly from their viewers, in the form of channel subscribers and tips. In every case, this money goes directly to the streamer. The idea that tips could be split opened up many opportunities to turn creator payments into a multiplayer experience.</p>
       <p class="main-content-copy">When we presented this idea, both mods and streamers would get excited. They started talking about all the ways they could use it—a notable shift from our earlier conversations. We decided to pivot.</p>
-      <img alt="Screenshots of testimonial tweets from happy users" class="main-content-image" src="images/pallygg/pallygg-testimonials.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-testimonials.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-testimonials-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshots of testimonial tweets from happy users" src="images/pallygg/pallygg-testimonials.png" />
+      </picture>
       <p class="main-content-image">Users would often tweet about Pally after their first experience, which we collected and displayed as social proof on our homepage.</p>
 
       <h2 class="main-content-copy">Making our first dollar</h2>
       <p class="main-content-copy">Discovery calls are great, but we needed to find our first customer. We scoured social media for streamers who talked about paying mods, eventually finding someone on Reddit who was passionate about the topic. We sent him a message, expecting nothing. To our surprise, he said, “let&rsquo;s run a fundraiser this weekend.”</p>
       <p class="main-content-copy">We didn&rsquo;t even have a product! So we told him we&rsquo;d have something ready in two weeks, and by the second weekend, we had scrapped together a working MVP. It was as scrappy as could be—a checkout page to receive tips, and a basic on-stream alert that would show on the streamer&rsquo;s broadcast. The rest of the product was us manually operating out of a spreadsheet.</p>
-      <img alt="Screenshot of our MVP and first customer&rsquo;s tip page" class="main-content-image" src="images/pallygg/pallygg-first-customer-tip-page.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-first-customer-tip-page.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-first-customer-tip-page-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshot of our MVP and first customer&rsquo;s tip page" src="images/pallygg/pallygg-first-customer-tip-page.png" />
+      </picture>
       <p class="main-content-image">Where Pally went from zero to one. Our very first customer, on his first stream using Pally. The first version of our product had two pages: a tip feed and checkout page.</p>
-      <img alt="Screenshot of our MVP transactions spreadsheet" class="main-content-image" src="images/pallygg/pallygg-first-customer-transactions.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-first-customer-transactions.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-first-customer-transactions-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshot of our MVP transactions spreadsheet" src="images/pallygg/pallygg-first-customer-transactions.png" />
+      </picture>
       <p class="main-content-image">To focus on time-to-value for our customers, the initial MVP was as scrappy as possible. After a user received tips, we manually calculated their tip splits and payouts in a spreadsheet.</p>
 
       <h2 class="main-content-copy">One customer to many</h2>
       <p class="main-content-copy">With a working MVP, we needed to validate the concept further. We seeded a pipeline of leads by finding streamers who ran charity fundraisers, and cold emailed them, thinking that if they were generous enough to do that, they&rsquo;d be more likely to run a campaign for their own mods. It worked. After enough cold emails (hundreds), we had a couple dozen prospects signed up.</p>
       <p class="main-content-copy">On the product side, everything was still incredibly scrappy, with a lot of unscalable work being done. We shipped a landing page with a basic sign up form, which put them into an “early access” queue. There was no self-signup flow yet, so each team&rsquo;s tip page was manually created by entering rows into a database, and often required some email back-and-forth. We&rsquo;d manually calculate the splits for each tip, then send users their payouts one by one.</p>
-      <img alt="Evolution of the dashboard" class="main-content-image" src="images/pallygg/pallygg-dashboard-evolution.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-dashboard-evolution.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-dashboard-evolution-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Evolution of the dashboard" src="images/pallygg/pallygg-dashboard-evolution.png" />
+      </picture>
       <p class="main-content-image">Evolution of the dashboard over time, as we added more features.</p>
       <p class="main-content-copy">In the meantime, we tried to get onto discovery calls with each prospect and learn as much as possible. We also set up a Discord server and funneled users there, to establish a community space and engage with users who had any questions. These tactics proved to be greatly effective, in that they both established trust with these early creators, and their feedback gave us a clear product roadmap to build on.</p>
 
       <h2 class="main-content-copy">Beginning to scale</h2>
       <p class="main-content-copy">One afternoon, our Twitter notifications started blowing up. We realized a creator tweeted excitedly about our platform, and it started to go viral! This started a snowball of demand, as streamers and mods started signing up and tweeting about us. We had enough momentum that we were getting organic sign-ups daily, faster than we could keep up with. This was a huge breakthrough—it was clear that our product solved a real pain point for people, and they wanted to use it.</p>
       <p class="main-content-copy">We prioritized getting this backlog of users onto the platform by implementing a self-signup flow. It wasn&rsquo;t perfect, but with learnings from our original early access form, we were able to get users live without needing to interact with them first.</p>
-      <img alt="Creator sign up flow" class="main-content-image" src="images/pallygg/pallygg-sign-up-creator.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-sign-up-creator.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-sign-up-creator-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Creator sign up flow" src="images/pallygg/pallygg-sign-up-creator.png" />
+      </picture>
       <p class="main-content-image">The start of the creator sign up flow. If they sign up with Twitch, we can pre-fill their account details: username display name, and profile picture. If they prefer to log in with email and password, they can connect their Twitch account afterwards.</p>
       <p class="main-content-copy">Users were categorized into two groups: creators, who were the owners of the page, and team members joining to receive a split of the funds. After a creator set up their page, they could invite their team members, and set up their split. Once everyone had joined, they could go live and immediately receive funds. Users with an account joining other teams simply needed to log in after receiving an invite link, and they were done.</p>
-      <img alt="Connect PayPal flow" class="main-content-image" src="images/pallygg/pallygg-connect-paypal.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-connect-paypal.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-connect-paypal-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Connect PayPal flow" src="images/pallygg/pallygg-connect-paypal.png" />
+      </picture>
       <p class="main-content-image">We iterated to have users connect their PayPal account, which was key to allow us to automate payouts. It also reduced fraud and prevented errors caused by users entering an incorrect PayPal email address.</p>
       <p class="main-content-copy">Over time, we iterated and improved this process:</p>
       <ul class="main-content-list">
@@ -147,15 +178,27 @@
         <li class="main-content-list">We improved security and reduced operational overhead by having users connect their PayPal account. In the original MVP, this was just an input field for a PayPal email address, which would often lead to errors.</li>
         <li class="main-content-list">We added an onboarding guide for creators, to give them clear next steps, and encourage them to use features that would optimize their performance while waiting for their team member to join.</li>
       </ul>
-      <img alt="Editing a team&rsquo;s tip splits" class="main-content-image" src="images/pallygg/pallygg-edit-tip-splits.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-edit-tip-splits.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-edit-tip-splits-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Editing a team&rsquo;s tip splits" src="images/pallygg/pallygg-edit-tip-splits.png" />
+      </picture>
       <p class="main-content-image">After creating a tip page, creators can invite up to 14 other teammates, organize them into categories, and customize their tip splits to their liking.</p>
-      <img alt="Design epxlorations for editing tip splits" class="main-content-image" src="images/pallygg/pallygg-edit-tip-splits-exploration.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-edit-tip-splits-exploration.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-edit-tip-splits-exploration-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Design explorations for editing tip splits" src="images/pallygg/pallygg-edit-tip-splits-exploration.png" />
+      </picture>
       <p class="main-content-image">Additional design explorations for editing tip splits.</p>
       
       <h2 class="main-content-copy">Balancing customer feedback</h2>
       <p class="main-content-copy">One of the hardest things in iterating a product is being disciplined enough to know what not to build, as much as what to build. We got so much feedback, and many, many ideas from our community. This is a double-edged sword—if we implemented everything, we&rsquo;d end up with an unfocused product. Users need to know what problem your product solves, and it can&rsquo;t be “everything”.</p>
       <p class="main-content-copy">We had to stay dedicated to our core vision: that we made streamer payments a multiplayer experience.</p>
-      <img alt="Screenshot of editing tip alerts" class="main-content-image" src="images/pallygg/pallygg-edit-alert.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-edit-alert.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-edit-alert-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshot of editing tip alerts" src="images/pallygg/pallygg-edit-alert.png" />
+      </picture>
       <p class="main-content-image">Streamers can customize alerts that broadcast when they receive a tip, creating moments of surprise and excitement they share with their viewers.</p>
       <p class="main-content-copy">Our most common feature requests were for customizing the on-stream integrations with Pally. For example, receiving a tip is a moment worth celebrating, and a core component of Pally&rsquo;s product are tip alerts. They broadcast this moment, creating surprise and excitement that streamers and viewers share together, and generate organic, in-product marketing content. Streamers can customize alerts to fit their brand, but we were mindful of building this too far—there are entire products around alert customization, and Pally&rsquo;s core value proposition is to automate payment splitting. We realized basic customization worked for the majority of creators, and instead opted to explore an API for more advanced streamers to connect to for full customization.</p>
       <video class="main-content-image-medium" controls>
@@ -168,7 +211,11 @@
         <li class="main-content-list">How does this feature incentivize more tips?</li>
         <li class="main-content-list">Would not having this feature be a deal-breaker for streamers?</li>
       </ul>
-      <img alt="Diagram of tip goal feature" class="main-content-image" src="images/pallygg/pallygg-edit-tip-goal.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-edit-tip-goal.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-edit-tip-goal-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Diagram of tip goal feature" src="images/pallygg/pallygg-edit-tip-goal.png" />
+      </picture>
       <p class="main-content-image">Creators can customize a tip goal that displays on their Twitch broadcast and on their Pally tip page. While the goal amount is arbitrary, displaying the progress bar on-stream increases viewer engagement, and ultimately, tip conversions.</p>
 
       <h2 class="main-content-copy">Building grit to overcome obstacles</h2>
@@ -177,7 +224,11 @@
       <p class="main-content-copy">We applied, and heard nothing back. We followed up. Crickets.</p>
       <p class="main-content-copy">Sometimes, as a founder, you need to do what it takes to survive. For us, that meant pulling out all the stops, and doing mundane, energy-draining work. We utilized any source of leverage we could find—we reached out to every single person we knew who had any sort of connection to PayPal, scoured LinkedIn and cold DMed second and third connections, and called PayPal every day, sitting on hold for hours.</p>
       <p class="main-content-copy">This took us months, but through sheer will and persistence, we got through and built the feature. It was very unsexy, but I&rsquo;m proud of that. It was a great lesson in grit: sometimes, there&rsquo;s no clever “hack,” you just have to keep doing the thing you don&rsquo;t want to, and you don&rsquo;t give up until you overcome the obstacle.</p>
-      <img alt="Screenshots of payout history feature" class="main-content-image" src="images/pallygg/pallygg-payout-history.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-payout-history.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-payout-history-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshots of payout history feature" src="images/pallygg/pallygg-payout-history.png" />
+      </picture>
       <p class="main-content-image">After shipping automated payouts through the PayPal API, this unlocked the ability for us to show users their payout history, with a detailed ledger of all tips included in each payout.</p>
 
       <h2 class="main-content-copy">Growing and selling</h2>
@@ -187,7 +238,11 @@
         <li class="main-content-list">The growth flywheel inherent to the product was working. When the product is used, it naturally creates in-product marketing. It&rsquo;s also a team-based platform, and when users sign up and have a good experience, they get often get other teams they are involved with to sign up.</li>
         <li class="main-content-list">The product was sticky. Creators signed up to the platform and stuck with it long term. We found that 67% of teams were active for a median of 1 year.</li>
       </ul>
-      <img alt="Charts showing Pally&rsquo;s key metrics" class="main-content-image" src="images/pallygg/pallygg-charts.png" />
+      <picture class="main-content-image">
+        <source srcset="images/pallygg/pallygg-charts.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/pallygg/pallygg-charts-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Charts showing Pally&rsquo;s key metrics" src="images/pallygg/pallygg-charts.png" />
+      </picture>
       <p class="main-content-image">Even when we halted nearly all marketing efforts, Pally continued to show growth.</p>
       <p class="main-content-copy">The story was in the data, and the data was powerful: creator teams loved using Pally.</p>
       <p class="main-content-copy">We didn&rsquo;t have the bandwidth to give Pally the attention it deserved, but we also didn&rsquo;t want to shut the service down. It was clear there was still room for growth under the right operators.</p>
