@@ -101,7 +101,11 @@
 
     <!-- Main content -->
     <article class="main-content">
-      <img alt="Dashboard with profile and active quest on desktop and mobile" class="main-content-image" src="images/cpg/cpg-profile.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-profile.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-profile-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Dashboard with profile and active quest on desktop and mobile" src="images/cpg/cpg-profile.png" />
+      </picture>
       <p class="main-content-image">The main dashboard, where users can connect up to ten wallets, fill out their profile, and view their gallery of community tokens.</p>
       <h2 class="main-content-copy">The challenge</h2>
       <p class="main-content-copy">CPG needed a custom product that would help them manage their web3 community. They wanted to:</p>
@@ -117,9 +121,17 @@
         </div>
       </div>
       <p class="main-content-image">A video demo from an early build of the app.</p>
-      <img alt="Mockups of a social feature to follow other community members" class="main-content-image" src="images/cpg/cpg-follow.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-follow.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-follow-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Mockups of a social feature to follow other community members" src="images/cpg/cpg-follow.png" />
+      </picture>
       <p class="main-content-image">The MVP of a social feature allowing users to find and follow other community members. It also provides an incentive for users to add their Twitter to their profile in order to be displayed. Starting with Twitter, this could be expanded to include other data—like tags for location, profession, and links to other social profiles—to serve as a directory and communication hub for members.</p>
-      <img alt="Empty states of the gallery" class="main-content-image" src="images/cpg/cpg-profile-empty-states.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-profile-empty-states.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-profile-empty-states-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Empty states of the gallery" src="images/cpg/cpg-profile-empty-states.png" />
+      </picture>
       <p class="main-content-image">Graceful empty states for the profile. To view their gallery, users needed to “complete” their profile by adding an email address (left). If a user had no community tokens, they&rsquo;d be presented with ways they could participate (right).</p>
       <p class="main-content-copy">CPG&rsquo;s community has three tiers, with membership held by NFTs:</p>
       <ul class="main-content-list">
@@ -129,28 +141,60 @@
       </ul>
       <p class="main-content-copy">We wanted to make sure the most valuable members felt the weight of their membership in their rewards points, but at the same time, allow anyone who cared to participate in free community events to sign up and be eligible for awards. As a result, higher tiered tokens earn significantly more points than free tokens.</p>
       <p class="main-content-copy">Leaning into the points system, we added gamification features, like the ability to complete quests to earn additional points, and introduced levels to give a sense of progress and achievement.</p>
-      <img alt="Examples of quests" class="main-content-image" src="images/cpg/cpg-quests-examples.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-quests-examples.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-quests-examples-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Examples of quests" src="images/cpg/cpg-quests-examples.png" />
+      </picture>
       <p class="main-content-image">Examples of potential quests.</p>
-      <img alt="Design explorations of quests feature" class="main-content-image" src="images/cpg/cpg-quests-exploration.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-quests-exploration.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-quests-exploration-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Design explorations of quests feature" src="images/cpg/cpg-quests-exploration.png" />
+      </picture>
       <p class="main-content-image">Design explorations of how to display new quests.</p>
-      <img alt="Design explorations of points and leveling" class="main-content-image" src="images/cpg/cpg-levels-exploration.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-levels-exploration.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-levels-exploration-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Design explorations of points and leveling" src="images/cpg/cpg-levels-exploration.png" />
+      </picture>
       <p class="main-content-image">Design explorations of how to display points and level progression.</p>
     
       <h2 class="main-content-copy">Balancing web2 and web3 experiences</h2>
       <p class="main-content-copy">To reduce technical complexity and avoid security risks, we decided to go with a soft-staking approach. Traditional staking often requires multiple on-chain interactions that cost the user gas fees. More importantly, it also puts their NFTs at risk by locking them into a contract, out of their custody. If that contract were to be compromised, they&rsquo;d lose their assets. Instead, users would soft-stake simply by issuing a gas-free signature using their wallet(s) that held the appropriate NFTs. This accomplished the goal of proving token ownership, but with a smoother staking experience.</p>
-      <img alt="Screenshots of WalletConnect customization" class="main-content-image" src="images/cpg/cpg-walletconnect-customization.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-walletconnect-customization.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-walletconnect-customization-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshots of WalletConnect customization" src="images/cpg/cpg-walletconnect-customization.png" />
+      </picture>
       <p class="main-content-image">WalletConnect&rsquo;s default dialog (left), customized to fit the CPG brand (right).</p>
-      <img alt="Add wallet flow" class="main-content-image" src="images/cpg/cpg-add-wallet.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-add-wallet.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-add-wallet-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Add wallet flow" src="images/cpg/cpg-add-wallet.png" />
+      </picture>
       <p class="main-content-image">Users can add up to ten wallets. All they need to do sign a message proving ownership.</p>
-      <img alt="Delete wallet flow" class="main-content-image" src="images/cpg/cpg-delete-wallet.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-delete-wallet.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-delete-wallet-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Delete wallet flow" src="images/cpg/cpg-delete-wallet.png" />
+      </picture>
       <p class="main-content-image">Flow to unlink wallets, with additional friction added to ensure users understand the consequences of deleting.</p>
 
       <h2 class="main-content-copy">Admin dashboard and points management</h2>
       <p class="main-content-copy">Community managers needed a way to manage their rewards program within the app, so we built an admin dashboard for them.</p>
       <p class="main-content-copy">Here, they can add and remove tokens that are supported by the app, and importantly, manage the rewards structure around specific tokens. As they experimented with token drops and ensuing rewards, we learned a great deal about what works and what doesn&rsquo;t—in particular, we learned about ways users could abuse rewards, and so we built safeguard features to prevent undesired behavior.</p>
-      <img alt="Adding a new collection from the admin dashboard" class="main-content-image" src="images/cpg/cpg-admin-new-collection.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-admin-new-collection.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-admin-new-collection-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Adding a new collection from the admin dashboard" src="images/cpg/cpg-admin-new-collection.png" />
+      </picture>
       <p class="main-content-image">Adding a new collection that users can to earn points for holding. After entering the contract address, we automatically pull the remaining on-chain data to help the user verify they&rsquo;ve entered the correct address.</p>
-      <img alt="UI of different ways to customize point rewards" class="main-content-image" src="images/cpg/cpg-admin-edit-collection.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-admin-edit-collection.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-admin-edit-collection-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="UI of different ways to customize point rewards" src="images/cpg/cpg-admin-edit-collection.png" />
+      </picture>
       <p class="main-content-image">Admins can customize how collections earn points, and add in safeguards to prevent misbehavior.</p>
       <p class="main-content-copy">We added multiple levers for them to customize the rewards experience:</p>
       <ul class="main-content-list">
@@ -159,15 +203,27 @@
         <li class="main-content-list">Point overrides: allowing for more granular control over points for specific token IDs, in the event they want to assign greater value to certain tokens in a collection over others</li>
         <li class="main-content-list">Holder limits: capping the number of tokens earning points in a collection, disincentivizing whale collectors from abusing the system</li>
       </ul>
-      <img alt="Viewing POAP details from the admin dashboard" class="main-content-image" src="images/cpg/cpg-admin-edit-poap.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-admin-edit-poap.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-admin-edit-poap-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Viewing POAP details from the admin dashboard" src="images/cpg/cpg-admin-edit-poap.png" />
+      </picture>
       <p class="main-content-image">Admins can add POAPs by their Event ID, and view details for POAPs they&rsquo;ve already added.</p>
       <p class="main-content-copy">While CPG would occasionally release free new token collections, these were often high-effort productions. For recurring events like their weekly guest speaker series, they would more commonly issue POAPs, which made perfect sense as a lightweight solution. This allowed them to quickly give users an on-chain proof of attendance, and reward community participation. Rather than treating each POAP as its own collection, we lumped them into one collection that could be managed together.</p>
       <p class="main-content-copy">Administrators can also download a raw data export of user data and their points, to be used for marketing segmentation, points analysis, or community events like raffles and giveaways.</p>
-      <img alt="Managing another admin&rsquo;s permissions" class="main-content-image" src="images/cpg/cpg-admin-edit-teammate.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-admin-edit-teammate.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-admin-edit-teammate-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Managing another admin&rsquo;s permissions" src="images/cpg/cpg-admin-edit-teammate.png" />
+      </picture>
       <p class="main-content-image">Admins can invite other teammates, and manage their permissions.</p>
       <h2 class="main-content-copy">Blanklabel customization</h2>
       <p class="main-content-copy">Member engagement is valuable to every web3 community. Because of this, we built the product with blanklabeling in mind. By allowing for a simple swap of colors and background assets, the app could be repurposed to fit any brand. This also opened doors for new revenue opportunities to sell the app as a loyalty SaaS.</p>
-      <img alt="Example mockups of blanklabeled app for other NFT communities" class="main-content-image" src="images/cpg/cpg-blanklabel-examples.png" />
+      <picture class="main-content-image">
+        <source srcset="images/cpg/cpg-blanklabel-examples.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/cpg/cpg-blanklabel-examples-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Example mockups of blanklabeled app for other NFT communities" src="images/cpg/cpg-blanklabel-examples.png" />
+      </picture>
       <p class="main-content-image">Examples of branded blanklabel opportunities for other NFT communities.</p>
     </article>
 
