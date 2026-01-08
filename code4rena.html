@@ -96,34 +96,36 @@
     </div>
 
     <div class="outer-container">
-        <hr />
-      </div>
+      <hr />
+    </div>
 
     <div class="outer-container">
 
         <!-- SatiCrypt Form -->
-        <div class="staticrypt-form">
+        <div class="staticrypt-wrapper">
+          <div class="staticrypt-form">
             <div class="staticrypt-instructions staticrypt-password-container staticrypt-toggle-password-visibility">
-                <h2>&#129323; This work is top secret.</h2>
-                <p>Due to the sensitive nature of this work, you'll need a password to view it.</p>
-                <p>You can request one by emailing me at <a href="javascript:window.location.href = '&#109;&#97;&#105;&#108;&#116;&#111;&#58;' + ['%6B%65%76%69%6E','%62%6F%6F%64%74%61%6D%61&#46;%63%6F%6D'].join('&#64;')">kevin&#64;boodtama&#46;com</a>.</p>
+              <h2>&#129323; This work is top secret.</h2>
+              <p>Due to the sensitive nature of this work, you'll need a password to view it.</p>
+              <p>You can request one by emailing me at <a href="javascript:window.location.href = '&#109;&#97;&#105;&#108;&#116;&#111;&#58;' + ['%6B%65%76%69%6E','%62%6F%6F%64%74%61%6D%61&#46;%63%6F%6D'].join('&#64;')">kevin&#64;boodtama&#46;com</a>.</p>
             </div>
     
             <form id="staticrypt-form" action="#" method="post">
-                <input
-                    id="staticrypt-password"
-                    type="password"
-                    name="password"
-                    placeholder="Password"
-                />
+              <input
+                id="staticrypt-password"
+                type="password"
+                name="password"
+                placeholder="Password"
+              />
 
-                <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
-                    <input id="staticrypt-remember" type="checkbox" name="remember" />
-                    Remember me
-                </label>
+              <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+                <input id="staticrypt-remember" type="checkbox" name="remember" />
+                Remember me
+              </label>
 
-                <input type="submit" class="staticrypt-decrypt-button" value="Submit"/>
+              <input type="submit" class="staticrypt-decrypt-button" value="Submit"/>
             </form>
+          </div>
         </div>
         <!--
         Created with StatiCrypt by Robin Moisson https://github.com/robinmoisson/staticrypt

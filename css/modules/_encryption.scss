@@ -1,3 +1,8 @@
+.staticrypt-wrapper {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
 .staticrypt-form {
   @include span-columns(6);
   @include shift(3);
@@ -7,17 +12,24 @@
   padding: $medium-spacing + $small-spacing $medium-spacing $medium-spacing;
 
   //Responsive medium screen
-  @include media(min-width em(480) max-width em(767.9)) {
+  @include media(min-width em(560) max-width em(767.9)) {
     @include span-columns(8);
     @include shift(2);
     padding: $medium-spacing;
   }
 
-  //Responsive small screen
-  @include media(max-width em(479.9)) {
+  //Responsive small to medium screen
+  @include media(min-width em(480) max-width em(559.9)) {
     @include span-columns(10);
     @include shift(1);
     padding: $medium-spacing;
+  }
+
+  //Responsive small screen
+  @include media(max-width em(479.9)) {
+    @include span-columns(12);
+    @include shift(0);
+    padding: $medium-spacing $small-spacing $small-spacing;
   }
 
   //Dark mode
