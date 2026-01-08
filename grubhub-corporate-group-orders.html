@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
     <meta name="description" content="I build digital products that move people and technology forward."/>
     <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-tablet.png"/>
+    <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-tablet-dark.png"/>
     <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-desktop-mobile.png"/>
+    <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-desktop-mobile-dark.png"/>
     <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-fax-mvp.png"/>
+    <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-fax-mvp-dark.png"/>
     <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-thermal-mvp.png"/>
+    <link rel="preload" as="image" href="images/grubhub-corporate-group-orders/grubhub-cgo-thermal-mvp-dark.png"/>
     <meta property="og:title" content="Kevin Boodtama, Product Design Leader"/>
     <meta property="og:description" content="I build digital products that move people and technology forward."/>
     <meta property="og:url" content="https://boodtama.com"/>
@@ -103,35 +107,71 @@
       <h2 class="main-content-copy">The challenge</h2>
       <p class="main-content-copy">Workplace dining has a TAM of $44.1B, with group ordering representing $14.9B of that. Grubhub had entered this market, but as a result of numerous acquisitions over the years, our corporate customers were spread across several brand platforms, each with varying functionality. It was impossible to serve all of their needs together.</p>
       <p class="main-content-copy">We wanted to win the corporate market. In order to do that, we needed a product foundation that could scale with our business. We had to consolidate our various platform functionality into Grubhub for Restaurants, then migrate 100% of restaurants and corporate accounts, generating $56.9M GMV.</p>
-      <img alt="Screenshots from the group order workflow mocked up on a tablet device" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-tablet.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-tablet.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-tablet-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshots from the group order workflow mocked up on a tablet device" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-tablet.png" />
+      </picture>
       <p class="main-content-image">Grubhub for Restaurants, our core product, is the main interface by which restaurants manage their incoming orders, typically managed on an Android tablet provided by Grubhub. We built new functionality for restaurants to manage their corporate group orders alongside the rest of their Grubhub orders.</p>
-      <img alt="Screenshots from the group order details mocked up on desktop and mobile devices" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-desktop-mobile.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-desktop-mobile.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-desktop-mobile-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshots from the group order details mocked up on desktop and mobile devices" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-mvp-desktop-mobile.png" />
+      </picture>
       <p class="main-content-image">Grubhub for Restaurants is a responsive web app, so we designed for a range of device sizes.</p>
-      <img alt="Mockups of restaurant fax printouts" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-fax-mvp.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-fax-mvp.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-fax-mvp-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Mockups of restaurant fax printouts" src="images/grubhub-corporate-group-orders/grubhub-cgo-fax-mvp.png" />
+      </picture>
       <p class="main-content-image">These are restaurant faxes for corporate group orders—you&rsquo;d be surprised how much restaurants still rely on archaic physical processes. To ensure order accuracy and maximize adoption, it was important our solution fit into restaurants&rsquo; existing workflows.</p>
-      <img alt="Mockups of restaurant thermal receipts" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-thermal-mvp.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-thermal-mvp.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-thermal-mvp-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Mockups of restaurant thermal receipts" src="images/grubhub-corporate-group-orders/grubhub-cgo-thermal-mvp.png" />
+      </picture>
       <p class="main-content-image">We also supported traditional thermal receipts, printing long copies for each group order, with space to tear between each customer.</p>
 
       <h2 class="main-content-copy">Running a design sprint</h2>
       <p class="main-content-copy">We had one quarter to deliver a customer-facing MVP, and a monumental workload ahead of us.</p>
       <p class="main-content-copy">I led a two-day <a href="https://designsprintkit.withgoogle.com/" target="_blank">design sprint</a> to get alignment across product, engineering, and operations stakeholders. We started with a cloudy problem statement and fractured domain knowledge. Through a series of group activities, we aligned on a problem definition, high-level scope and user journeys, and began exploring early solutions. At the end of the sprint, we left energized and with focused direction to move towards.</p>
-      <img alt="Photos of exercises from day 1 of our design sprint" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-1.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-1.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-1-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Photos of exercises from day 1 of our design sprint" src="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-1.png" />
+      </picture>
       <p class="main-content-image">Photos from day 1 of our design sprint: our agenda, aligning on definition, high-level journey mapping, and exploring a "How Might We?" exercise.</p>
-      <img alt="Photos of exercises from day 2 of our design sprint" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-2.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-2.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-2-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Photos of exercises from day 2 of our design sprint" src="images/grubhub-corporate-group-orders/grubhub-cgo-design-sprint-day-2.png" />
+      </picture>
       <p class="main-content-image">Day 2 involved Crazy 8&rsquo;s, dot voting, and 3-panel solution storyboards.</p>
 
       <h2 class="main-content-copy">Balancing a multi-sided marketplace</h2>
       <p class="main-content-copy">The next stage was to bring the ideas we explored into higher fidelity. This was a very collaborative process, with regular check-ins to include product, engineering, and operational leads across the project. We had candid conversations on how to balance needs between clients, restaurants, and our own business, as many decisions had second- and third-order consequences on other parts of the ecosystem.</p>
       <p class="main-content-copy">For example, one key decision we made was around the timing of when a corporate group order would be sent to restaurants. Clients were able to schedule them ahead of time, and a group could hold as many as 50 individual employees—but we wouldn&rsquo;t know the actual numbers, or the order&rsquo;s contents, until they submitted their order. Naturally, restaurants need more time to prepare larger orders, and we wanted to allow restaurants to set their own lead times. However, we realized that this would create a fragmented marketplace experience for our corporate clients, and they&rsquo;d have to manage a complex web of restaurant lead times to place their orders on time.</p>
       <p class="main-content-copy">Since clients are ultimately the end customer, we decided to prioritize their experience, and remove as much friction as possible in their journey from signing up to placing an order. Using data we had on average group order size, restaurant prep times, and ETA accuracy of delivery, we aligned on a universal 90-minute heads up time for restaurants receiving corporate group orders.</p>
-      <img alt="Images of UI explorations for sending group order notifications" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-card-explorations.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-card-explorations.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-card-explorations-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Images of UI explorations for sending group order notifications" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-card-explorations.png" />
+      </picture>
       <p class="main-content-image">Explorations on how to distinguish incoming group orders from other order types. We considered different ways to send the notification, the urgency at which we should surface new orders, and controls for filtering different order types.</p>
       <p class="main-content-copy">Another key consideration was the fulfillment process of the orders themselves, as this required an entirely different workflow from standard, single-customer orders. Restaurants needed to understand that there were multiple customers, who needed their food packaged and labeled individually, but the entire group order would be delivered together. We would provide some onboard training on this front, but the product still needed to be effective on its own.</p>
       <p class="main-content-copy">Restaurants have different workflows, and how information is presented to the front-of-house for entering into their POS is not always the same way that would be most effective for the kitchen to fulfill. We explored two key ways of breaking down an order contents: grouped by customer, versus by item. Ultimately, we settled on a single view of grouping by customer, as it reduced our scope, and better positioned the requirement for restaurants to package and label orders separately.</p>
-      <img alt="Images of UI explorations breaking down an order&rsquo;s contents" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-details-explorations.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-details-explorations.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-details-explorations-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Images of UI explorations breaking down an order&rsquo;s contents" src="images/grubhub-corporate-group-orders/grubhub-cgo-gfr-order-details-explorations.png" />
+      </picture>
       <p class="main-content-image">Explorations of the order details, where we would provide all information about the customers and contents of each order.</p>
       <p class="main-content-copy">Though we were building a software solution, restaurants are physical workspaces, involving tangible goods and real-world interactions. In many cases, this means restaurants will use paper as an artifact to pass between any combination of the front-of-house, the kitchen, the customer, and to save for record-keeping. To suit restaurants&rsquo; existing workflows, we had to ensure our experience in the physical world would match our software experience.</p>
-      <img alt="Images of design explorations for order print-outs" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-fax-explorations.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-fax-explorations.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-fax-explorations-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Images of design explorations for order print-outs" src="images/grubhub-corporate-group-orders/grubhub-cgo-fax-explorations.png" />
+      </picture>
       <p class="main-content-image">Explorations of the fax and desktop print-outs, with considerations of how restaurants would use these pieces of paper, if and how they would change hands, and what information was most valuable to who throughout the order&rsquo;s lifecycle.</p>
 
       <h2 class="main-content-copy">Learning from the market</h2>
@@ -146,9 +186,17 @@
         <li class="main-content-list">Client administrators, the ones setting up the order and dealing with logistics on the client side, didn&rsquo;t need the admin copy as they had an email record. Further, restaurants were often throwing this copy away as they didn&rsquo;t understand its purpose.</li>
         <li class="main-content-list">Some restaurants had trouble fulfilling larger group orders when they were busy.</li>
       </ul>
-      <img alt="Photos of print-outs being used in the real world" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-research-artifacts.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-research-artifacts.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-research-artifacts-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Photos of print-outs being used in the real world" src="images/grubhub-corporate-group-orders/grubhub-cgo-research-artifacts.png" />
+      </picture>
       <p class="main-content-image">Examples of how print-outs were used in the real world.</p>
-      <img alt="Photos of different restaurant environments" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-research-environment.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-research-environment.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-research-environment-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Photos of different restaurant environments" src="images/grubhub-corporate-group-orders/grubhub-cgo-research-environment.png" />
+      </picture>
       <p class="main-content-image">Photos showcasing the wide breadth of environmental factors. One restaurant had multiple ordering and prep stations, which made group orders difficult to facilitate (left). Our tablet was often one of many devices fighting for attention in a crowded front-of-house environment (middle). Another restaurant kept stacks of records, with years&rsquo; worth of orders printed up and piled on one another (right).</p>
 
       <h2 class="main-content-copy">Iterating a solution</h2>
@@ -160,7 +208,11 @@
         <li class="main-content-list">Removed the admin copy, as people were finding it more confusing than valuable.</li>
       </ul>
       <p class="main-content-copy">These changes made the content more relevant, used significantly less paper, and having smaller printouts made it easier for restaurants to attach them to the order.</p>
-      <img alt="Images of the updated restaurant print-outs" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-fax-iteration.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-fax-iteration.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-fax-iteration-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Images of the updated restaurant print-outs" src="images/grubhub-corporate-group-orders/grubhub-cgo-fax-iteration.png" />
+      </picture>
       <p class="main-content-image">The updated restaurant print-outs, designed using restaurant feedback.</p>
       <p class="main-content-copy">Like any product, it&rsquo;s never finished—we still had a long way to go after our MVP release. After launching, we:</p>
       <ul class="main-content-list">
@@ -168,9 +220,17 @@
         <li class="main-content-list">Started building for Grubhub Delivery, as the MVP only supported restaurant self-delivery.</li>
         <li class="main-content-list">Began executing a three-phase experience strategy: enable (expand foundation to get 100% of clients and restaurants migrated, and sunset old platforms; achieved in Q4 2020), improve (make the quality of the MVP experience better), and scale (add entirely new features to grow client base and win the market).</li>
       </ul>
-      <img alt="Screenshot of update allowing restaurants to set maximum group sizes" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-group-size.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-group-size.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-group-size-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Screenshot of update allowing restaurants to set maximum group sizes" src="images/grubhub-corporate-group-orders/grubhub-cgo-group-size.png" />
+      </picture>
       <p class="main-content-image">To mitigate the issue of restaurants cancelling orders that were too large—resulting in a ton of lost revenue, and a very bad customer experience—we built the ability for restaurants to set maximum group sizes.</p>
-      <img alt="Images of UI and print-out notification for orders coming soon" class="main-content-image" src="images/grubhub-corporate-group-orders/grubhub-cgo-upcoming-orders.png" />
+      <picture class="main-content-image">
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-upcoming-orders.png" media="(prefers-color-scheme: light)"/>
+        <source srcset="images/grubhub-corporate-group-orders/grubhub-cgo-upcoming-orders-dark.png" media="(prefers-color-scheme: dark)"/>
+        <img alt="Images of UI and print-out notification for orders coming soon" src="images/grubhub-corporate-group-orders/grubhub-cgo-upcoming-orders.png" />
+      </picture>
       <p class="main-content-image">Our MVP gave restaurants a 90-minute lead time, but customers could place orders up to a week in advance. We iterated a solution that gave restaurants a better window into group orders that were being set up for the week ahead.</p>
 
       <h2 class="main-content-copy">Reflections</h2>
