@@ -62,8 +62,6 @@ li {
   margin-left: $base-font-size * 3.125; /*50px*/
 
   &:hover {
-    color: lighten($action-color, 20%);
-    transition: $base-transition;
     color: $action-color;
     text-decoration: none;
 

@@ -1193,8 +1193,6 @@ li {
   margin-left: 3.125em; /*50px*/
 }
 .nav-text:hover {
-  color: #ff9e99;
-  transition: all 0.2s;
   color: #ff3d33;
   text-decoration: none;
 }
