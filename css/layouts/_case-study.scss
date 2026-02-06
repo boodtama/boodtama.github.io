@@ -351,9 +351,9 @@ ul.hero-sidebar-list {
 
   //Responsive small screen
   @include media(max-width em(479.9)) {
-    @include span-columns(12);
-    @include shift(0);
-    padding: ($small-spacing + $extra-small-spacing) 1em 0 1em;
+    @include span-columns(10);
+    @include shift(1);
+    padding: $small-spacing 0 0;
   }
 }
 

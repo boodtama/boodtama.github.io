@@ -734,12 +734,20 @@ h6.project-name {
   margin-bottom: 0.375em;
   font-weight: 750;
 }
+h2.project-name-case-study,
+h3.project-name-case-study,
+h4.project-name-case-study,
+h5.project-name-case-study,
+h6.project-name-case-study {
+  margin-bottom: 0.375em;
+  font-weight: 750;
+}
 @media screen and (max-width: 38.74375em) {
-  h2.project-name,
-  h3.project-name,
-  h4.project-name,
-  h5.project-name,
-  h6.project-name {
+  h2.project-name-case-study,
+  h3.project-name-case-study,
+  h4.project-name-case-study,
+  h5.project-name-case-study,
+  h6.project-name-case-study {
     text-align: center;
   }
 }
@@ -799,6 +807,12 @@ p.project-overview:first-child {
 }
 p.work-text-description {
   margin-top: 1.5em;
+}
+@media screen and (max-width: 38.74375em) {
+  p.work-text-description {
+    margin-top: 0.75em;
+    margin-bottom: 0.75em;
+  }
 }
 
 a {
@@ -1533,7 +1547,7 @@ footer p {
     margin-right: 2.3576515979%;
     width: 65.8807828007%;
     margin-left: 17.0596085997%;
-    padding: 3em 0 0 0;
+    padding: 2.25em 0 0 0;
   }
   .work-text:last-child {
     margin-right: 0;
@@ -1546,7 +1560,7 @@ footer p {
     margin-right: 2.3576515979%;
     width: 82.9403914003%;
     margin-left: 8.5298042998%;
-    padding: 3em 0 0 0;
+    padding: 1.5em 0 0 0;
   }
   .work-text:last-child {
     margin-right: 0;
@@ -2174,9 +2188,9 @@ li.main-content-list {
     float: left;
     display: block;
     margin-right: 2.3576515979%;
-    width: 100%;
-    margin-left: 0%;
-    padding: 2.25em 1em 0 1em;
+    width: 82.9403914003%;
+    margin-left: 8.5298042998%;
+    padding: 1.5em 0 0;
   }
   .more-work-text:last-child {
     margin-right: 0;

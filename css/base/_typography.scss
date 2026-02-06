@@ -60,6 +60,11 @@ h6 {
     &.project-name {
       margin-bottom: (calc($extra-small-spacing / 2));
       font-weight: 750;
+    }
+
+    &.project-name-case-study {
+      margin-bottom: (calc($extra-small-spacing / 2));
+      font-weight: 750;
 
       //Responsive medium screen
       @include media(max-width em(619.9)) {
@@ -127,6 +132,12 @@ p {
 
   &.work-text-description {
     margin-top: $small-spacing;
+
+    //Responsive medium screen
+    @include media(max-width em(619.9)) {
+      margin-top: $extra-small-spacing;
+      margin-bottom: $extra-small-spacing;
+    }
   }
 
 }

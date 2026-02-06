@@ -109,14 +109,14 @@
   @include media(min-width em(480) max-width em(767.9)) {
     @include span-columns(8);
     @include shift(2);
-    padding: $medium-spacing 0 0 0;
+    padding: ($small-spacing + $extra-small-spacing) 0 0 0;
   }
 
   //Responsive small screen
   @include media(max-width em(479.9)) {
     @include span-columns(10);
     @include shift(1);
-    padding: $medium-spacing 0 0 0;
+    padding: $small-spacing 0 0 0;
   }
 }
 
