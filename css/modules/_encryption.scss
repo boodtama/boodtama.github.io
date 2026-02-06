@@ -10,6 +10,7 @@
   box-shadow: 0 0 $small-spacing 0 $base-border-color, 0 0.5em 0.5em 0 $base-border-color;
   margin-bottom: $small-spacing;
   padding: $medium-spacing + $small-spacing $medium-spacing $medium-spacing;
+  background-color: $l1-background-color;
 
   //Responsive medium screen
   @include media(min-width em(560) max-width em(767.9)) {
@@ -36,6 +37,7 @@
   @media (prefers-color-scheme: dark) {
     border: 2px solid $base-border-color-dark;
     box-shadow: none;
+    background-color: $l1-background-color-dark;
     //box-shadow: 0 0 $small-spacing 0 darken($base-background-color-dark, 2%), 0 0.5em 0.5em 0 darken($base-background-color-dark, 3%);
   }
 }

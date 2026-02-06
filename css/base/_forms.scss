@@ -29,7 +29,7 @@ label {
 #{$all-text-inputs},
 select[multiple=multiple],
 textarea {
-  background-color: $base-background-color;
+  background-color: lighten($l1-background-color, 1%);
   border: $base-border;
   border-radius: calc($base-border-radius / 2);
   box-sizing: border-box;
@@ -41,12 +41,12 @@ textarea {
   width: 100%;
 
   &:hover {
-    border-color: $form-focus-color;
+    border-color: darken($base-border-color, 5%);
   }
 
   &:focus {
-    border-color: $form-focus-color;
-    box-shadow: $form-box-shadow-focus;
+    border-color: lighten($action-color, 25%);;
+    //box-shadow: $form-box-shadow-focus;
     outline: none;
   }
 }
@@ -56,7 +56,7 @@ textarea {
   #{$all-text-inputs},
   select[multiple=multiple],
   textarea {
-    background-color: lighten($base-background-color-dark, 2%);
+    background-color: lighten($l1-background-color-dark, 1%);
     border: $base-border-dark;
 
     &:hover {
@@ -64,8 +64,8 @@ textarea {
     }
 
     &:focus {
-      border-color: lighten($base-border-color-dark, 5%);
-      box-shadow: $form-box-shadow-focus-dark;
+      border-color: darken($action-color-dark, 35%);
+      //box-shadow: $form-box-shadow-focus-dark;
       outline: none;
     }
   }

@@ -52,8 +52,10 @@ $seafoam: #85e0d5;
 $seafoam-highlight: #3e514f;
 $base-background-color: $off-white;
 $nav-background-color: rgba(250,247,244,0.8);
+$l1-background-color: lighten($off-white, 1%);
 $base-background-color-dark: #202021;
 $nav-background-color-dark: rgba(32, 32, 33, 0.8);
+$l1-background-color-dark: lighten(#202021, 1%);
 
 // Font Colors
 $base-font-color: $dark-gray;
@@ -68,8 +70,8 @@ $base-border: 2px solid $base-border-color;
 $base-border-dark: 2px solid $base-border-color-dark;
 
 // Forms
-$form-focus-color: darken($base-border-color, 5%);
-$form-focus-color-dark: lighten($base-border-color-dark, 5%);
+$form-focus-color: lighten($action-color, 25%);
+$form-focus-color-dark: darken($action-color-dark, 35%);
 $form-box-shadow: inset 0 1px 4px rgba(#000, 0.06);
 $form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($form-focus-color, $lightness: -5%, $alpha: -0.3);$form-focus-color-dark: darken($base-border-color-dark, 5%);
 $form-box-shadow-focus-dark: $form-box-shadow, 0 0 5px adjust-color($form-focus-color-dark, $lightness: 15%, $alpha: -0.3);
