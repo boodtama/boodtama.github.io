@@ -45,7 +45,7 @@ textarea {
   }
 
   &:focus {
-    border-color: lighten($action-color, 25%);;
+    border-color: lighten($action-color, 25%);
     //box-shadow: $form-box-shadow-focus;
     outline: none;
   }

@@ -831,6 +831,28 @@ a:active, a:focus, a:hover {
 a:active, a:focus {
   outline: none;
 }
+a.project-name {
+  color: #363636;
+  display: block;
+  font-family: "plus-jakarta-sans", "montserrat-bold", "Helvetica", "Arial", sans-serif;
+  font-size: 1.875em; /*30pt*/
+  font-weight: 750;
+  line-height: 1.2;
+  margin: 0 0 0.375em;
+}
+a.project-name:active, a.project-name:focus, a.project-name:hover {
+  text-decoration: underline;
+  text-decoration-color: #ffcfcc;
+}
+@media (prefers-color-scheme: dark) {
+  a.project-name {
+    color: #faedde;
+  }
+  a.project-name:active, a.project-name:focus, a.project-name:hover {
+    text-decoration: underline;
+    text-decoration-color: rgba(250, 237, 222, 0.4);
+  }
+}
 a.new-window {
   position: relative;
   width: fit-content;
